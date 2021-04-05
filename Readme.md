@@ -34,4 +34,3 @@
 - Đọc hết các `Articles bắt buộc phải đọc` > Dịch viết ra từng file md. trong 5 ngày
 - Cấu hình elasticsearch qua dockers.
 - Thực hành hết các ví dụ theo như sau: https://markheath.net/post/exploring-elasticsearch-with-docker
-- 
