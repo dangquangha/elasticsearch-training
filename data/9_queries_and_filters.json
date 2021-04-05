@@ -1,0 +1,125 @@
+#Get the mapping of the blog index
+GET /blog/_mapping
+#Perform a prefix query in "query context" on the non-analyzed values
+POST /blog/_search
+{
+  "query": {
+    "prefix": {
+      "title.keyword": "My Combell Power Tips:"
+    }
+  }
+}
+#Perform a prefix query in "filter context" on the non-analyzed values
+POST /blog/_search
+{
+  "query": {
+    "bool": {
+      "filter": {
+        "prefix": {
+          "title.keyword": "My Combell Power Tips:"
+        }
+      }
+    }
+  }
+}
+#Execute a query on the title field which is analyzed
+POST /blog/_search
+{
+  "query": {
+    "match": {
+      "title": "Tips:"
+    }
+  }
+}
+#Combined multiple filters in a boolean query (must => and, must_not => not, should => or)
+POST /blog/_search
+{
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "bool": {
+            "must": [
+              {
+                "term": {
+                  "language": "en"
+                }
+              },
+              {
+                "range": {
+                  "date": {
+                    "gte": "2016-01-01",
+                    "format": "yyyy-MM-dd"
+                  }
+                }
+              }
+            ],
+            "must_not": [
+              {
+                "term": {
+                  "category": "joomla"
+                }
+              }
+            ],
+            "should": [
+              {
+                "term": {
+                  "category": "Hosting"
+                }
+              },
+              {
+                "term": {
+                  "category": "evangelist"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+
+#Combined multiple queries in a boolean query (must => and, must_not => not, should => or)
+#Should behave differently in query mode, than in filter mode
+POST /blog/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "language": "en"
+          }
+        },
+        {
+          "range": {
+            "date": {
+              "gte": "2016-01-01",
+              "format": "yyyy-MM-dd"
+            }
+          }
+        }
+      ],
+      "must_not": [
+        {
+          "term": {
+            "category": "joomla"
+          }
+        }
+      ],
+      "should": [
+        {
+          "term": {
+            "category": "Hosting"
+          }
+        },
+        {
+          "term": {
+            "category": "evangelist"
+          }
+        }
+      ]
+    }
+  }
+}

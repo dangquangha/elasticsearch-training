@@ -1,0 +1,37 @@
+#Find blog posts that have an id between 100 & 150, with correct schema
+POST /blog/_search
+{
+  "query": {
+    "range": {
+      "guid": {
+        "gte": 100,
+        "lte": 150
+      }
+    }
+  }
+}
+#Find blog posts that have an id between 6150 and 6200, with correct schema
+POST /blog/_search
+{
+  "query": {
+    "range": {
+      "guid": {
+        "gte": 6150,
+        "lte": 6200
+      }
+    }
+  }
+}
+#Find blog posts written in January 2016, with correct schema
+POST /blog/_search
+{
+  "query": {
+    "range": {
+      "date": {
+        "gte": "2016-01-01",
+        "lt": "2016-02-01",
+        "format": "yyyy-MM-dd"
+      }
+    }
+  }
+}

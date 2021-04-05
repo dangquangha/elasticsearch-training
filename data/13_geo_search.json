@@ -1,0 +1,53 @@
+#Search all places within a 5km radius of Diksmuide
+POST /cities/city/_search
+{
+  "size": 200, 
+  "sort": [
+    {
+      "city": {
+        "order": "asc"
+      }
+    }
+  ], 
+  "query": {
+    "bool": {
+      "must": {
+        "match_all": {}
+      },
+      "filter": {
+        "geo_distance": {
+          "distance": "5km",
+          "location": {
+            "lat": 51.033333, 
+            "lon": 2.866667
+            
+          }
+        }
+      }
+    }  
+  }
+}
+#Draw a bounding box that contains Koksijde & Nieuwpoort
+POST /cities/city/_search
+{
+  "size": 200, 
+  "query": {
+    "bool": {
+      "filter": {
+        "geo_bounding_box": {
+            "location": {
+              "bottom_left": {
+                "lat": 51.1,
+                "lon": 2.6
+              },
+              "top_right": {
+                "lat": 51.2,
+                "lon": 2.7
+              }
+            }
+          }
+        }
+      }
+    }  
+  }
+}

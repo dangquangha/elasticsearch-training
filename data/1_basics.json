@@ -1,0 +1,54 @@
+#Welcome to ElasticSearch
+GET /
+#Get all documents, from all indices, from all types
+GET /_search
+#Count all documents, from all indices, from all types
+GET /_count
+#Add document to "company" index in "employee" type with id 1
+POST /company/employee/1
+{
+  "name": "Feryn"
+}
+#Retrieve document 1 from "company" index in "employee" type
+GET /company/employee/1
+#Only get the source, not the meta data
+GET /company/employee/1/_source
+#Add employee number 2
+POST /company/employee/2
+{
+  "firstname": "Jonas",
+  "name": "Dhaenens"
+}
+#Add employee 3, don't choose the id yourself
+POST /company/employee/
+{
+  "firstname": "Stijn",
+  "name": "Claerhout"
+}
+#Overwrite employee 1
+POST /company/employee/1
+{
+  "firstname": "Thijs"
+}
+#Retrieve employee 1 again
+GET /company/employee/1
+#Do a partial update on employee 1
+POST /company/employee/1/_update
+{
+  "doc": {
+    "name": "Feryn"
+  }
+}
+#Looks better
+GET /company/employee/1
+#Insert + update = upsert
+POST /company/employee/3/_update
+{
+  "doc": {
+    "firstname": "Frederik",
+    "name": "Poelman"
+  },
+  "doc_as_upsert": true
+}
+#Gotta search 'em all
+POST /company/_search

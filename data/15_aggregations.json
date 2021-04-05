@@ -1,0 +1,156 @@
+#List the top 10 most popular bloggers: this will basically return a count of all the posts ("doc_count"), grouped by author
+POST /blog/_search
+{
+  "size": 0, 
+  "aggs": {
+    "popular_bloggers": {
+      "terms": {
+        "field": "author",
+        "size": 10
+      }
+    }
+  }
+}
+#List the top 10 most popular bloggers and the languages they write in
+POST /blog/_search
+{
+  "size": 0, 
+  "aggs": {
+    "popular_bloggers": {
+      "terms": {
+        "field": "author",
+        "size": 10
+      },
+      "aggs": {
+        "used_languages": {
+          "terms": {
+            "field": "language",
+            "size": 10
+          }
+        }
+      }
+    }
+  }
+}
+#Number of blog posts written in Dutch per month,in 2016
+POST /blog/_search
+{
+  "size":0,
+  "query": {
+    "bool": {
+      "filter": {
+        "bool": {
+          "must": [
+            {
+              "range": {
+                "date": {
+                  "gte": "2016-01-01",
+                  "lte": "2016-12-31",
+                  "format": "yyyy-MM-dd"
+                }
+              }
+            },
+            {
+              "term": {
+                "language": "nl"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "aggs": {
+    "number_of_posts_per_month_in_2016": {
+      "date_histogram": {
+        "field": "date",
+        "interval": "month",
+        "format": "MMMM"
+      }
+    }
+  }
+}
+#List the top 3 most popular cars.
+#The "make" field is mapped as a string. Strings are converted to the "text" type, which means they get analyzed.
+#The original value isn't stored in the field data, only the analyzed and tokenized version.
+#Luckily, strings also get a custom "keyword" field that is mapped as a "keyword" type. This can be used for aggregations.
+POST /cars/_search
+{
+  "size": 0, 
+  "aggs": {
+    "popular_cars": {
+      "terms": {
+        "field": "make.keyword",
+        "size": 3
+      }
+    }
+  }
+}
+#Average price for a car
+POST /cars/_search
+{
+  "size": 0, 
+  "aggs": {
+    "average_price": {
+      "avg": {
+        "field": "price"
+      }
+    }
+  }
+}
+#Extended statistics about the price of a car
+POST /cars/_search
+{
+  "size": 0, 
+  "aggs": {
+    "price_statistics": {
+      "extended_stats": {
+        "field": "price"
+      }
+    }
+  }
+}
+#Total revenue for cars per price range, with an interval of 20000
+POST /cars/transactions/_search
+{
+   "size": 0,
+   "aggs":{
+      "price":{
+         "histogram":{ 
+            "field": "price",
+            "interval": 20000
+         },
+         "aggs":{
+            "revenue": {
+               "sum": { 
+                 "field": "price"
+               }
+             }
+         }
+      }
+   }
+}
+#Average price of a Ford vs. the total average price of all cars
+POST /cars/transactions/_search
+{
+    "size": 0,
+    "query": {
+        "match": {
+            "make": "ford"
+        }
+    },
+    "aggs": {
+        "single_avg_price": {
+            "avg": { "field": "price" }
+        },
+        "all": {
+            "global": {},
+            "aggs": {
+                "avg_price": {
+                    "avg": { "field": "price" }
+                }
+
+            }
+        }
+    }
+}

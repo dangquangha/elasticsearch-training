@@ -1,0 +1,66 @@
+#Search for the term "thijs" in the "title" field
+POST /blog/_search
+{
+  "query": {
+    "match": {
+      "title": "thijs"
+    }
+  }
+}
+#Search for the term "thijs" or "combell" in the "title" field
+POST /blog/_search
+{
+  "query": {
+    "match": {
+      "title": "thijs combell"
+    }
+  }
+}
+#Search for the terms "thijs" and "combell" in the "title" field
+POST /blog/_search
+{
+  "query": {
+    "match": {
+      "title": {
+        "query": "combell thijs",
+        "operator": "and"
+      }
+    }
+  }
+}
+#Search for the term "vagrant thijs varnish". Results should match 67% (i.e. 2 out of 3) of words (clauses)
+POST /blog/_search
+{
+  "query": {
+    "match": {
+      "title": {
+        "query": "vagrant thijs varnish",
+        "minimum_should_match": "67%"
+      }
+    }
+  }
+}
+#Search for "vagrant" and "chef". The terms should be next to eachother
+POST /blog/_search
+{
+  "query": {
+    "match_phrase": {
+      "title": {
+        "query": "vagrant chef",
+        "slop": 1
+      }
+    }
+  }
+}
+#Search for "vagrant" and "chef". The terms should be at most 2 positions apart
+POST /blog/_search
+{
+  "query": {
+    "match_phrase": {
+      "title": {
+        "query": "vagrant chef",
+        "slop": 2
+      }
+    }
+  }
+}

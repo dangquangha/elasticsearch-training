@@ -1,0 +1,3333 @@
+DELETE /cities
+PUT /cities
+{
+  "mappings": {
+    "city": {
+      "properties": {
+        "city": {
+          "type": "keyword"
+        },
+        "location": {
+          "type": "geo_point"
+        }
+      }
+    }
+  }
+}
+POST /_bulk
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aalbeke", "location": {"lat": 50.783333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aardappelhoek", "location": {"lat": 50.95, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aarsele", "location": {"lat": 51, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aartrijke", "location": {"lat": 51.116667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Abeele", "location": {"lat": 50.816667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Abeelhoek", "location": {"lat": 50.85, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Abele", "location": {"lat": 50.816667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Abtsul", "location": {"lat": 50.883333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Achterhoek", "location": {"lat": 50.783333, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Adinkerke", "location": {"lat": 51.066667, "lon": 2.6}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aelbeke", "location": {"lat": 50.783333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aerd-Appelhoek", "location": {"lat": 50.95, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aerseele", "location": {"lat": 51, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aertrycke", "location": {"lat": 51.116667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Akkerhoek", "location": {"lat": 51.016667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Akkerstraat", "location": {"lat": 51.166667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Akspoel", "location": {"lat": 51.066667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Alveringem", "location": {"lat": 51.016667, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Alveringhem", "location": {"lat": 51.016667, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"America", "location": {"lat": 50.8, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Amerika", "location": {"lat": 50.8, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Amersveld", "location": {"lat": 51, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Amersvelde", "location": {"lat": 51, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ange", "location": {"lat": 51.1, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Anseghem", "location": {"lat": 50.833333, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Anzegem", "location": {"lat": 50.833333, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ardooie", "location": {"lat": 50.983333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ardoye", "location": {"lat": 50.983333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Arend", "location": {"lat": 51.133333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Arme Leut", "location": {"lat": 50.783333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Armoede", "location": {"lat": 50.916667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Artoishoek", "location": {"lat": 50.833333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aschhoop", "location": {"lat": 50.95, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ashoop", "location": {"lat": 50.95, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Aspergem", "location": {"lat": 51.033333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Asperghem", "location": {"lat": 51.033333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Assebroek", "location": {"lat": 51.2, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Assebrouck", "location": {"lat": 51.2, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Audenarde", "location": {"lat": 50.716667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Autryve", "location": {"lat": 50.75, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Avecappelle", "location": {"lat": 51.066667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Avekapelle", "location": {"lat": 51.066667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Avelgem", "location": {"lat": 50.766667, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Avelghem", "location": {"lat": 50.766667, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Axpoele", "location": {"lat": 51.066667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ballons", "location": {"lat": 50.716667, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Barakken", "location": {"lat": 50.783333, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Barsdamhoek", "location": {"lat": 51.016667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Basse Flandre", "location": {"lat": 50.783333, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Basseije", "location": {"lat": 50.8, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Basse Ville", "location": {"lat": 50.733333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Basseye", "location": {"lat": 50.8, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bassije", "location": {"lat": 50.8, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Baudelo", "location": {"lat": 51, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Baudeloo", "location": {"lat": 51, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bavegemknok", "location": {"lat": 50.75, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bavichove", "location": {"lat": 50.866667, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bavikhove", "location": {"lat": 50.866667, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beau Voisinage", "location": {"lat": 50.716667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Becelaere", "location": {"lat": 50.85, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beckstraat", "location": {"lat": 50.8, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beekhoek", "location": {"lat": 51.066667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beekstraat", "location": {"lat": 50.8, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beer", "location": {"lat": 51.066667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beernem", "location": {"lat": 51.15, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beerst", "location": {"lat": 51.066667, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beerst Bloot", "location": {"lat": 51.05, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beerst-Bloote", "location": {"lat": 51.05, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beggijnhof", "location": {"lat": 50.85, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Begijnhof", "location": {"lat": 50.85, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Begynhof", "location": {"lat": 50.85, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beitem", "location": {"lat": 50.883333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bekegem", "location": {"lat": 51.166667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bekeghem", "location": {"lat": 51.166667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Belgiek", "location": {"lat": 50.833333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Belhutte", "location": {"lat": 51.066667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bellegem", "location": {"lat": 50.783333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Belleghem", "location": {"lat": 50.783333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Berg", "location": {"lat": 51.183333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bergen", "location": {"lat": 51.083333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Berghoek", "location": {"lat": 50.983333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bergmolens", "location": {"lat": 50.916667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Berg op Zoom", "location": {"lat": 51.083333, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bergstraat", "location": {"lat": 50.833333, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bergstraet", "location": {"lat": 50.833333, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bergwijk", "location": {"lat": 50.816667, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bergwyk", "location": {"lat": 50.816667, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Berkenhaag", "location": {"lat": 51.116667, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Berkenshoek", "location": {"lat": 50.966667, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bescheedweg", "location": {"lat": 51.033333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bescheedwege", "location": {"lat": 51.033333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beselare", "location": {"lat": 50.85, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beveren", "location": {"lat": 50.866667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bewesterpoort", "location": {"lat": 51.05, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beytem", "location": {"lat": 50.883333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Beythem", "location": {"lat": 50.883333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Biesbrughoek", "location": {"lat": 51.133333, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Biesgat", "location": {"lat": 51.016667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bikschote", "location": {"lat": 50.933333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bilckbosch", "location": {"lat": 51.033333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bilkbos", "location": {"lat": 51.033333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bisschophoek", "location": {"lat": 51.1, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bissegem", "location": {"lat": 50.816667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bisseghem", "location": {"lat": 50.816667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bixschoote", "location": {"lat": 50.933333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bizet", "location": {"lat": 50.7, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Blankenberge", "location": {"lat": 51.316667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Blankenberghe", "location": {"lat": 51.316667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Blauwe Sluis", "location": {"lat": 51.216667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Blauwe Sluys", "location": {"lat": 51.3, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Blekerij", "location": {"lat": 50.883333, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bloed Putteken", "location": {"lat": 51.033333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bloemendaal", "location": {"lat": 51.133333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bloemendaale", "location": {"lat": 51.133333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Blokken", "location": {"lat": 50.816667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bloot Putteken", "location": {"lat": 51.033333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boekhout", "location": {"lat": 51.05, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boergonje", "location": {"lat": 51.15, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boesinghe", "location": {"lat": 50.9, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boezinge", "location": {"lat": 50.9, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boezingebrug", "location": {"lat": 50.883333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bois Fichaux", "location": {"lat": 50.75, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bois Jacquet", "location": {"lat": 50.716667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bois-Jaquet", "location": {"lat": 50.716667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boitshoucke", "location": {"lat": 51.083333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Booitshoeke", "location": {"lat": 51.083333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boonhoek", "location": {"lat": 50.85, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bos", "location": {"lat": 50.783333, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bosch", "location": {"lat": 50.783333, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boschhoek", "location": {"lat": 50.916667, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boschkant", "location": {"lat": 50.833333, "lon": 3.483333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boschmolens", "location": {"lat": 50.9, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boshoek", "location": {"lat": 50.916667, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boskant", "location": {"lat": 50.833333, "lon": 3.483333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bosmolens", "location": {"lat": 50.9, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bossuit", "location": {"lat": 50.75, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bossuyt", "location": {"lat": 50.75, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bouckhout", "location": {"lat": 51.05, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boukhout", "location": {"lat": 51.05, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bourgogne", "location": {"lat": 51.15, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bourgognehoek", "location": {"lat": 51.15, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bourgondiehoek", "location": {"lat": 51.15, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bourgoniehoek", "location": {"lat": 51.15, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boutikel", "location": {"lat": 51.066667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Boutiquel", "location": {"lat": 51.066667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bovekerke", "location": {"lat": 51.05, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Braambeierhoek", "location": {"lat": 51.283333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Brandhoek", "location": {"lat": 50.85, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bredene-aan-Zee", "location": {"lat": 51.247222, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bredene-Bad", "location": {"lat": 51.247222, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bredene", "location": {"lat": 51.233333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bredensteger", "location": {"lat": 51.05, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bredenstreger", "location": {"lat": 51.05, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Breedene", "location": {"lat": 51.233333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Breedensteeger", "location": {"lat": 51.05, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Breemeers", "location": {"lat": 50.8, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Breemeersen", "location": {"lat": 50.733333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bremersen", "location": {"lat": 50.733333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Breskens", "location": {"lat": 51.05, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Brielen", "location": {"lat": 50.866667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Broekenhoek", "location": {"lat": 50.766667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bruges", "location": {"lat": 51.216667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Brugge", "location": {"lat": 51.216667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bruloos", "location": {"lat": 50.783333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Brulooze", "location": {"lat": 50.783333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bruloze", "location": {"lat": 50.783333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bruwaan", "location": {"lat": 51.066667, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bulscamp", "location": {"lat": 51.05, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bulskamp", "location": {"lat": 51.05, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bultehoek", "location": {"lat": 50.95, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Burgmolen", "location": {"lat": 50.983333, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bus Brug", "location": {"lat": 51.133333, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Busschemeerschen", "location": {"lat": 50.75, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Busseboom", "location": {"lat": 50.833333, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Bussemeersen", "location": {"lat": 50.75, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Cachtem", "location": {"lat": 50.933333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Cadsand", "location": {"lat": 50.933333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Caeneghem", "location": {"lat": 51.016667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Caeskerke", "location": {"lat": 51.033333, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Canada", "location": {"lat": 50.883333, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Capaardhoek", "location": {"lat": 50.966667, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Cappelle-Sainte Catherine", "location": {"lat": 50.866667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Cappelle Sainte Kateriene", "location": {"lat": 50.866667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Caster", "location": {"lat": 50.816667, "lon": 3.483333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Cayphas", "location": {"lat": 50.916667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Clabouterie", "location": {"lat": 51.133333, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Clachoire", "location": {"lat": 50.966667, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Clachore", "location": {"lat": 50.966667, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Clachorre", "location": {"lat": 50.966667, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Clemskerke", "location": {"lat": 51.25, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Clercken", "location": {"lat": 51, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Clercken Smisse", "location": {"lat": 50.983333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Collegiehoek", "location": {"lat": 51.016667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Colliemolenhoek", "location": {"lat": 50.916667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Colombus", "location": {"lat": 51.3, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Comerenhoek", "location": {"lat": 50.8, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Commerestraat", "location": {"lat": 50.833333, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Contredam", "location": {"lat": 51.216667, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Coolkerke", "location": {"lat": 51.25, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Coolscamp", "location": {"lat": 51, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Coppernollehoek", "location": {"lat": 50.883333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Cortemarck", "location": {"lat": 51.033333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Cortemarck-Elle", "location": {"lat": 51.016667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Couckelaere", "location": {"lat": 51.083333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Coucou", "location": {"lat": 50.8, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Courtrai", "location": {"lat": 50.833333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Couthove", "location": {"lat": 50.866667, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Coxyde-Bains", "location": {"lat": 51.116667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Coxyde", "location": {"lat": 51.1, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Coyghem", "location": {"lat": 50.733333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Crombeke", "location": {"lat": 50.916667, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Cuerne", "location": {"lat": 50.85, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dadizeele", "location": {"lat": 50.85, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dadizele", "location": {"lat": 50.85, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dadizelehoek", "location": {"lat": 50.833333, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Damme", "location": {"lat": 51.25, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Danegem", "location": {"lat": 51.166667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Daneghem", "location": {"lat": 51.166667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Arend", "location": {"lat": 51.133333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Barreel", "location": {"lat": 51.2, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Bourgogne", "location": {"lat": 51.15, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Brabander", "location": {"lat": 51.333333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Broekagie", "location": {"lat": 51.033333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Broeken", "location": {"lat": 50.716667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Bruloos", "location": {"lat": 50.783333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Cappelle Weyden", "location": {"lat": 51.116667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Dale", "location": {"lat": 51.133333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Deerlijk", "location": {"lat": 50.85, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Deerlyck", "location": {"lat": 50.85, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Flesch", "location": {"lat": 51, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Fles", "location": {"lat": 51, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Haan", "location": {"lat": 51.266667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Hel", "location": {"lat": 50.766667, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Hoesten", "location": {"lat": 51.116667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Hoge Moere", "location": {"lat": 51.216667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Hooge Moere", "location": {"lat": 51.216667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Kapelle Weiden", "location": {"lat": 51.116667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Kappelhoek", "location": {"lat": 51.016667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Kat", "location": {"lat": 50.85, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Keijorum", "location": {"lat": 51.15, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Keiorum", "location": {"lat": 51.15, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Klijte", "location": {"lat": 50.8, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Knok", "location": {"lat": 51.1, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Kortewilde", "location": {"lat": 51.05, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Kouter", "location": {"lat": 51.166667, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Kroon", "location": {"lat": 51.2, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Leeuw", "location": {"lat": 51.133333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Meiboom", "location": {"lat": 51.283333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Meunink", "location": {"lat": 51.333333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Meyboom", "location": {"lat": 51.283333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Moeren", "location": {"lat": 51.05, "lon": 2.6}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Aap", "location": {"lat": 50.9, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Nachtegaal", "location": {"lat": 51.316667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Aep", "location": {"lat": 50.9, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Daele", "location": {"lat": 51.133333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Neringen", "location": {"lat": 51, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Haan", "location": {"lat": 51.266667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Hooie", "location": {"lat": 51.133333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Hoorn", "location": {"lat": 51.15, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Hoorne", "location": {"lat": 51.15, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Denhoye", "location": {"lat": 51.133333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Hucker", "location": {"lat": 50.916667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Hukker", "location": {"lat": 50.916667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Pauw", "location": {"lat": 50.916667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Plas", "location": {"lat": 50.9, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Den Populier", "location": {"lat": 51.05, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dentergem", "location": {"lat": 50.966667, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Denterghem", "location": {"lat": 50.966667, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Paling", "location": {"lat": 50.95, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Panne", "location": {"lat": 51.1, "lon": 2.583333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Pauw", "location": {"lat": 50.916667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Plaats", "location": {"lat": 51.05, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Pleine", "location": {"lat": 51.15, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Polka", "location": {"lat": 50.783333, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Preekboom", "location": {"lat": 51.25, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Riet Bosch", "location": {"lat": 51.116667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Rietbos", "location": {"lat": 51.116667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Ruiter", "location": {"lat": 50.933333, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Schuddebeurze", "location": {"lat": 51.15, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Seule", "location": {"lat": 50.716667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Desselgem", "location": {"lat": 50.883333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Desselghem", "location": {"lat": 50.883333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Stroolput", "location": {"lat": 51.1, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Vinke", "location": {"lat": 50.9, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Vlakte", "location": {"lat": 51.116667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Vrede", "location": {"lat": 51.333333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Waele Weyden", "location": {"lat": 51.1, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Waleweiden", "location": {"lat": 51.1, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Waterval", "location": {"lat": 51.15, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Watervalle", "location": {"lat": 51.15, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Waterwal", "location": {"lat": 51.15, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Zeepanne", "location": {"lat": 51.1, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"De Zelte", "location": {"lat": 51.15, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dickebusch", "location": {"lat": 50.816667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dikkebusch", "location": {"lat": 50.816667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dikkebus", "location": {"lat": 50.816667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Diksmuide", "location": {"lat": 51.033333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Diksmuidsepoort", "location": {"lat": 50.85, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dixmude", "location": {"lat": 51.033333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dixmuide", "location": {"lat": 51.033333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dixmuiden", "location": {"lat": 51.033333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dode Manhoek", "location": {"lat": 51, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Doode Manhoek", "location": {"lat": 51, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Doomkerke", "location": {"lat": 51.066667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Doorn", "location": {"lat": 51.166667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Doornhoek", "location": {"lat": 50.883333, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Draaibank", "location": {"lat": 50.933333, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Draaibrug", "location": {"lat": 51.05, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Draeibank", "location": {"lat": 50.933333, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Draeybank", "location": {"lat": 50.933333, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dranouter", "location": {"lat": 50.766667, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dranoutre", "location": {"lat": 50.766667, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Drie Grachten", "location": {"lat": 50.95, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Driehoven", "location": {"lat": 50.733333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Drie Koningen", "location": {"lat": 50.733333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Drie Linden", "location": {"lat": 50.783333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Drie Masten", "location": {"lat": 50.866667, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Drie Pikkels", "location": {"lat": 51.166667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dries", "location": {"lat": 50.75, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Driesele", "location": {"lat": 50.866667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Drieweg", "location": {"lat": 51, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Driewege", "location": {"lat": 51.333333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Driewegen", "location": {"lat": 51.333333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Drogenboom", "location": {"lat": 50.883333, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Drogenbroodhoek", "location": {"lat": 50.883333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dronckaert", "location": {"lat": 50.766667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dronkaard", "location": {"lat": 50.766667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Droogenboom", "location": {"lat": 50.883333, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Droogenbroodhoek", "location": {"lat": 50.883333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dry-Masten", "location": {"lat": 50.866667, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dry Pikkels", "location": {"lat": 51.166667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Drywegen", "location": {"lat": 51, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dudzeele", "location": {"lat": 51.283333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Dudzele", "location": {"lat": 51.283333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Duinbergen", "location": {"lat": 51.35, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Duinhoek", "location": {"lat": 51.083333, "lon": 2.583333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Duynhoek", "location": {"lat": 51.083333, "lon": 2.583333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Edewalle", "location": {"lat": 51.05, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eegem", "location": {"lat": 51.016667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eegem-Kapelle", "location": {"lat": 51.016667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eeghem", "location": {"lat": 51.016667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eeghem-Kapelle", "location": {"lat": 51.016667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eernegem", "location": {"lat": 51.133333, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eerneghem", "location": {"lat": 51.133333, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eesen", "location": {"lat": 51.033333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eessen", "location": {"lat": 51.033333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Egem", "location": {"lat": 51.016667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Egemkapel", "location": {"lat": 51.016667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eggewaartskapelle", "location": {"lat": 51.05, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eggewaertscappelle", "location": {"lat": 51.05, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Egypten", "location": {"lat": 51.183333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eienbroek", "location": {"lat": 51.283333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eijenbroek", "location": {"lat": 51.283333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eikhoek", "location": {"lat": 50.866667, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eindsdijk", "location": {"lat": 51.033333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eindsdyks", "location": {"lat": 51.033333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eirtbrugge", "location": {"lat": 50.883333, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Elle", "location": {"lat": 51.016667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Elsendamme", "location": {"lat": 50.95, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Elverdinge", "location": {"lat": 50.883333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Elverdinghe", "location": {"lat": 50.883333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Elzenwal", "location": {"lat": 50.816667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Elzenwalle", "location": {"lat": 50.816667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Emelgem", "location": {"lat": 50.933333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Emelghem", "location": {"lat": 50.933333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Engel", "location": {"lat": 51.1, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Engelhoek", "location": {"lat": 50.833333, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Erkegem", "location": {"lat": 51.133333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Erkeghem", "location": {"lat": 51.133333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Esen", "location": {"lat": 51.033333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Espierres", "location": {"lat": 50.716667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Esser", "location": {"lat": 50.816667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ettelgem", "location": {"lat": 51.183333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ettelghem", "location": {"lat": 51.183333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Evangelieboom", "location": {"lat": 50.8, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Evenbroek", "location": {"lat": 51.283333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eyenbroek", "location": {"lat": 51.283333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Eykhoek", "location": {"lat": 50.95, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Fassche", "location": {"lat": 50.95, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Finance", "location": {"lat": 50.983333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Finteele", "location": {"lat": 50.95, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Fintele", "location": {"lat": 50.95, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Fintelle", "location": {"lat": 50.95, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Flesch", "location": {"lat": 51, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Fortem", "location": {"lat": 51.016667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Fort", "location": {"lat": 51.066667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Forthem", "location": {"lat": 51.016667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Fortuin", "location": {"lat": 50.883333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Frezenberg", "location": {"lat": 50.866667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Furnes", "location": {"lat": 51.066667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Galgen Kauter", "location": {"lat": 50.95, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Galgen Kouter", "location": {"lat": 50.95, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Galooper", "location": {"lat": 51.116667, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Galopen", "location": {"lat": 51.116667, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gapaard", "location": {"lat": 50.766667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gapaardhoek", "location": {"lat": 50.966667, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Garde de Dieu", "location": {"lat": 50.766667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Garde-Dieu", "location": {"lat": 50.766667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gaver", "location": {"lat": 50.733333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gaverken", "location": {"lat": 50.883333, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gavre", "location": {"lat": 50.733333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geete", "location": {"lat": 51.2, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geite", "location": {"lat": 51.2, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geitenberg", "location": {"lat": 50.75, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geiterberg", "location": {"lat": 50.75, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geluveld", "location": {"lat": 50.833333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geluwe", "location": {"lat": 50.8, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gemeeneveld", "location": {"lat": 51.116667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gemeenhof", "location": {"lat": 50.95, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gemenedijk", "location": {"lat": 51.2, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gemeneveld", "location": {"lat": 51.116667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geussesmis", "location": {"lat": 50.883333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geuzenbosch", "location": {"lat": 51.083333, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geuzenbos", "location": {"lat": 51.083333, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geuzenhoek", "location": {"lat": 50.766667, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gevaarts", "location": {"lat": 51.15, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gevaerts", "location": {"lat": 51.15, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Geyte", "location": {"lat": 51.2, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gheluvelt", "location": {"lat": 50.833333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gheluwe", "location": {"lat": 50.8, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ghistelles", "location": {"lat": 51.166667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gijverinkhove", "location": {"lat": 50.966667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gijzelbrechtegem", "location": {"lat": 50.833333, "lon": 3.5}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ginste", "location": {"lat": 50.966667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gistel", "location": {"lat": 51.166667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gitsberg", "location": {"lat": 50.983333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gits", "location": {"lat": 51, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Godshuis", "location": {"lat": 50.766667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Goudberg", "location": {"lat": 50.9, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Griete", "location": {"lat": 51.066667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Grietehoek", "location": {"lat": 51.066667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Grietjensgalge", "location": {"lat": 51.033333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Grijspaardmolen", "location": {"lat": 51.016667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Grijspeerdmolen", "location": {"lat": 51.016667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Groendaal", "location": {"lat": 51.016667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Groenendaal", "location": {"lat": 51.016667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Groenendael", "location": {"lat": 51.016667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Groenendijk", "location": {"lat": 51.133333, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Groenenspriet", "location": {"lat": 51.05, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Groenespriet", "location": {"lat": 51.05, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Groenplein", "location": {"lat": 51.35, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gronie", "location": {"lat": 51.016667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Groonie", "location": {"lat": 51.016667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Grootemolenhoek", "location": {"lat": 51.166667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Grote Molenhoek", "location": {"lat": 51.166667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Grouwenboom", "location": {"lat": 51.016667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gryspeerd-Molen", "location": {"lat": 51.016667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gullegem", "location": {"lat": 50.833333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gulleghem", "location": {"lat": 50.833333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gyselbrechteghem", "location": {"lat": 50.833333, "lon": 3.5}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Gyverinchove", "location": {"lat": 50.966667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haaghoek", "location": {"lat": 50.983333, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haandekot", "location": {"lat": 50.883333, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haanhoek", "location": {"lat": 50.983333, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haantje", "location": {"lat": 51.016667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haantjeshoek", "location": {"lat": 50.95, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haaselbeekstraat", "location": {"lat": 51.083333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haaszakhoek", "location": {"lat": 51.016667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haentje", "location": {"lat": 51.016667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haesewindeken", "location": {"lat": 50.983333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haezakhoek", "location": {"lat": 51.016667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hagebaart", "location": {"lat": 50.85, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hagebaert Sint-Jean", "location": {"lat": 50.85, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hagebroek", "location": {"lat": 51, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hagebrugge", "location": {"lat": 51.183333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hagebrug", "location": {"lat": 51.183333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hagenbroek", "location": {"lat": 51, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hailebeke", "location": {"lat": 50.85, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hallebast", "location": {"lat": 50.8, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Halve Barreel", "location": {"lat": 51.116667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hamhoek", "location": {"lat": 50.866667, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hamoek", "location": {"lat": 50.866667, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Handzaeme", "location": {"lat": 51.033333, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Handzame", "location": {"lat": 51.033333, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Harelbeke", "location": {"lat": 50.85, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Harendijcke", "location": {"lat": 51.3, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Harendijke", "location": {"lat": 51.3, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Harendijk", "location": {"lat": 51.3, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Harendycke", "location": {"lat": 51.3, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haringe", "location": {"lat": 50.9, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haringhe", "location": {"lat": 50.9, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Harlebeke", "location": {"lat": 50.85, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haureux", "location": {"lat": 50.733333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Haut Judas", "location": {"lat": 50.733333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hazegras", "location": {"lat": 51.333333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hazelbeekstraaf", "location": {"lat": 51.083333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hazenwindeken", "location": {"lat": 50.983333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hazevind", "location": {"lat": 50.983333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hazewindeken", "location": {"lat": 50.983333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hazewind", "location": {"lat": 50.983333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heernisse", "location": {"lat": 51.016667, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heestert", "location": {"lat": 50.783333, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heetjen", "location": {"lat": 50.883333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heidelberg", "location": {"lat": 51.15, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heihoek", "location": {"lat": 50.983333, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heirweg", "location": {"lat": 50.85, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heist-aan-Zee", "location": {"lat": 51.35, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heist", "location": {"lat": 51.35, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heist-sur-Mer", "location": {"lat": 51.35, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hekhoek", "location": {"lat": 51.2, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hekke", "location": {"lat": 51.066667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heksen", "location": {"lat": 50.8, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heksken", "location": {"lat": 50.8, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Helchin", "location": {"lat": 50.733333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Helkijn", "location": {"lat": 50.733333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Herthoek", "location": {"lat": 50.816667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hertsberge", "location": {"lat": 51.1, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hertsberghe", "location": {"lat": 51.1, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Het Aanwijs", "location": {"lat": 51.1, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Het Aanwys", "location": {"lat": 51.1, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Het Sas", "location": {"lat": 50.9, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Het Veld", "location": {"lat": 50.95, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Het Zoute", "location": {"lat": 51.35, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Het Zwin", "location": {"lat": 51.366667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heulebrug", "location": {"lat": 51.333333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heule", "location": {"lat": 50.833333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heydelberg", "location": {"lat": 51.15, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Heyst", "location": {"lat": 51.35, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hilhoek", "location": {"lat": 50.833333, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hille", "location": {"lat": 51.05, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoeke", "location": {"lat": 51.283333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoekje", "location": {"lat": 50.95, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoekske", "location": {"lat": 50.95, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hofdries", "location": {"lat": 50.8, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoge-Blekker", "location": {"lat": 51.1, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoge Dijken", "location": {"lat": 51.166667, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoge", "location": {"lat": 50.833333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoge Lenen", "location": {"lat": 50.95, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoge Moere", "location": {"lat": 51.216667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hogenblekker", "location": {"lat": 51.1, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoge Schuur", "location": {"lat": 50.983333, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoge Seine", "location": {"lat": 50.933333, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hogeveld", "location": {"lat": 51.066667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hollebeke", "location": {"lat": 50.8, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hollendries", "location": {"lat": 50.8, "lon": 3.483333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hollevoorde", "location": {"lat": 51.116667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hondspoot", "location": {"lat": 50.916667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoog Beveren", "location": {"lat": 50.983333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hooge Dijken", "location": {"lat": 51.166667, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogedyken", "location": {"lat": 51.166667, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hooge", "location": {"lat": 50.833333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogeleenen", "location": {"lat": 50.95, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogeschuur", "location": {"lat": 50.983333, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hooge-Seine", "location": {"lat": 50.933333, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogeveld", "location": {"lat": 51.066667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hooghe", "location": {"lat": 50.833333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogkwartier", "location": {"lat": 50.983333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoog Landeken", "location": {"lat": 51.016667, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hooglede", "location": {"lat": 50.983333, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogplaat", "location": {"lat": 51.3, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogplaats", "location": {"lat": 51.3, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogstade", "location": {"lat": 50.966667, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogstraaje", "location": {"lat": 50.783333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogstraat", "location": {"lat": 51.166667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogstraatje", "location": {"lat": 50.783333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoogte", "location": {"lat": 50.933333, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hooithoek", "location": {"lat": 51.033333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hoorn", "location": {"lat": 51.15, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Houcke", "location": {"lat": 51.283333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Houtave", "location": {"lat": 51.233333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Houtem", "location": {"lat": 51.016667, "lon": 2.6}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Houthem", "location": {"lat": 51.016667, "lon": 2.6}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Houthuls", "location": {"lat": 50.983333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Houthulst", "location": {"lat": 50.983333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Houttave", "location": {"lat": 51.233333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Huilaart Molen", "location": {"lat": 51.016667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Huilaert Molen", "location": {"lat": 51.016667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hukker", "location": {"lat": 50.916667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hulste", "location": {"lat": 50.883333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hulsvelde", "location": {"lat": 50.933333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hurselhoek", "location": {"lat": 51, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Huttegem", "location": {"lat": 50.833333, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Hutteghem", "location": {"lat": 50.833333, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ichtegem", "location": {"lat": 51.1, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ichteghem", "location": {"lat": 51.1, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ieper", "location": {"lat": 50.85, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"IJzerdeurhoek", "location": {"lat": 50.9, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ingelmunster", "location": {"lat": 50.916667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ingooigem", "location": {"lat": 50.816667, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ingoyghem", "location": {"lat": 50.816667, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Iper", "location": {"lat": 50.85, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Iseghem", "location": {"lat": 50.916667, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Isenberghe", "location": {"lat": 51, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ivoz", "location": {"lat": 50.583333, "lon": 5.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Izegem", "location": {"lat": 50.916667, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Izenberge", "location": {"lat": 51, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Jabbeke", "location": {"lat": 51.183333, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Jo", "location": {"lat": 51.033333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Jonkershove", "location": {"lat": 50.966667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Jonkershoven", "location": {"lat": 50.966667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Joo", "location": {"lat": 51.033333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kaaie", "location": {"lat": 50.85, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kaaskerke", "location": {"lat": 51.033333, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kachtem", "location": {"lat": 50.933333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kaiphas", "location": {"lat": 50.916667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kalberg", "location": {"lat": 50.933333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kaleshoek", "location": {"lat": 51.066667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kalishoek", "location": {"lat": 51.066667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kalve", "location": {"lat": 50.916667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kalverstaart", "location": {"lat": 50.75, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kalversteert", "location": {"lat": 50.75, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kanada", "location": {"lat": 50.883333, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kanegem", "location": {"lat": 51.016667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kanterhoek", "location": {"lat": 50.85, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kapelhoek", "location": {"lat": 50.833333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kapellehoek", "location": {"lat": 50.983333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kapelle", "location": {"lat": 51.016667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kapelleweiden", "location": {"lat": 51.116667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kaphoek", "location": {"lat": 50.783333, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kappaart", "location": {"lat": 50.816667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kappaert", "location": {"lat": 50.816667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kappelhoek", "location": {"lat": 50.833333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kasand", "location": {"lat": 50.933333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kasteelhoek", "location": {"lat": 50.8, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kaster", "location": {"lat": 50.816667, "lon": 3.483333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Katteknock", "location": {"lat": 50.966667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Katteknok", "location": {"lat": 50.966667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kattestraat", "location": {"lat": 51, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kattestraet", "location": {"lat": 51, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kazand", "location": {"lat": 50.933333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Keerselaar", "location": {"lat": 50.9, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Keiberg", "location": {"lat": 50.766667, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Keiem", "location": {"lat": 51.083333, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Keizerhoek", "location": {"lat": 51.05, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kemmel", "location": {"lat": 50.783333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kerkepanne", "location": {"lat": 51.1, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kerkhove", "location": {"lat": 50.8, "lon": 3.5}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kerselaar", "location": {"lat": 50.9, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Keyem", "location": {"lat": 51.083333, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Keyzerhoek", "location": {"lat": 51.05, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kezelberg", "location": {"lat": 50.833333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kijkuithoek", "location": {"lat": 50.816667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kippe", "location": {"lat": 50.966667, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klabouterie", "location": {"lat": 51.133333, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klaphulle", "location": {"lat": 51.05, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klarenhoek", "location": {"lat": 50.8, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kleineberg", "location": {"lat": 50.816667, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kleine Hoek van 't Moertje", "location": {"lat": 51, "lon": 2.583333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kleinen 't Moertje", "location": {"lat": 51, "lon": 2.583333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kleine Vlakte", "location": {"lat": 51.35, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klein Harelbeke", "location": {"lat": 50.85, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klein Harlebeke", "location": {"lat": 50.85, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klein Moertje", "location": {"lat": 51, "lon": 2.583333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klein Ronse", "location": {"lat": 50.8, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klein Ronssel", "location": {"lat": 50.8, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klein Tourcoing", "location": {"lat": 50.75, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klein Zillebeke", "location": {"lat": 50.816667, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kleitboek", "location": {"lat": 50.866667, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kleitgat", "location": {"lat": 50.783333, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kleithoek", "location": {"lat": 50.866667, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klemskerke", "location": {"lat": 51.25, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klephoek", "location": {"lat": 50.833333, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klerken", "location": {"lat": 51, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kleyne Vlakte", "location": {"lat": 51.35, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kleythoek", "location": {"lat": 50.816667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klijte", "location": {"lat": 50.783333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klijtgat", "location": {"lat": 50.783333, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klijthoek", "location": {"lat": 50.816667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klijtte", "location": {"lat": 50.783333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klinkewal", "location": {"lat": 51.25, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kloefhoek", "location": {"lat": 50.816667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kloosterhoek", "location": {"lat": 50.8, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klyte", "location": {"lat": 50.783333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klytgat", "location": {"lat": 50.783333, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klythoek", "location": {"lat": 51.116667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Klytte", "location": {"lat": 50.783333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Knocke", "location": {"lat": 50.983333, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Knocke-sur-Mer", "location": {"lat": 51.35, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Knock", "location": {"lat": 50.783333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Knokke-aan-Zee", "location": {"lat": 51.35, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Knokke-Heist", "location": {"lat": 51.35, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Knokke", "location": {"lat": 50.8, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Knokkne", "location": {"lat": 51.35, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Knok", "location": {"lat": 50.783333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Knolle Hoek", "location": {"lat": 51.033333, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koekelare", "location": {"lat": 51.083333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koekuithoek", "location": {"lat": 50.9, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koekuit", "location": {"lat": 50.916667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koelberg", "location": {"lat": 50.816667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koelenberg", "location": {"lat": 50.816667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kokeldriesch", "location": {"lat": 50.916667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kokeldries", "location": {"lat": 50.916667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koksijde Baden", "location": {"lat": 51.116667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koksijde-Bad", "location": {"lat": 51.116667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koksijde", "location": {"lat": 51.1, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kollegiehoek", "location": {"lat": 51.016667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kolliemolenhoek", "location": {"lat": 50.916667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Komerenhoek", "location": {"lat": 50.8, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kommerenhoek", "location": {"lat": 50.8, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kommerestraat", "location": {"lat": 50.833333, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kontredam", "location": {"lat": 51.216667, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kooigem", "location": {"lat": 50.733333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koolkerke", "location": {"lat": 51.25, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koolskamp", "location": {"lat": 51, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koolveld", "location": {"lat": 51.1, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koorenbloem", "location": {"lat": 51.083333, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koornbloem", "location": {"lat": 51.016667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kopperhollehoek", "location": {"lat": 50.883333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koppernollehoek", "location": {"lat": 50.883333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Korentje", "location": {"lat": 50.766667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Korteboeken", "location": {"lat": 51.116667, "lon": 3.583333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kortekeer", "location": {"lat": 51.066667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kortemark", "location": {"lat": 51.033333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kortenkeer", "location": {"lat": 50.933333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kortepijp", "location": {"lat": 50.716667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kortepyp", "location": {"lat": 50.716667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kortewilde", "location": {"lat": 50.8, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kortrijk", "location": {"lat": 50.833333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Koudekot", "location": {"lat": 50.766667, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kousseboom", "location": {"lat": 51, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kouter", "location": {"lat": 51.166667, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kouthof", "location": {"lat": 50.866667, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kreupel", "location": {"lat": 50.8, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kriekhoek", "location": {"lat": 50.9, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Krombeke", "location": {"lat": 50.916667, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Krommekeer", "location": {"lat": 51.05, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Krommeker", "location": {"lat": 51.05, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Krommendijk", "location": {"lat": 50.966667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kroonhoek", "location": {"lat": 51.15, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kroon", "location": {"lat": 51.2, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruipendaarde", "location": {"lat": 50.95, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruisabele", "location": {"lat": 51.033333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruisdoorn", "location": {"lat": 50.916667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruiseecke", "location": {"lat": 50.816667, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruiseeke", "location": {"lat": 50.816667, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruiseik", "location": {"lat": 50.816667, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruiseke", "location": {"lat": 50.816667, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruishoek", "location": {"lat": 50.8, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruiskalsijde", "location": {"lat": 51.1, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruiske", "location": {"lat": 50.966667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruisse Abeele", "location": {"lat": 51.033333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruisstraat", "location": {"lat": 50.766667, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruisweg", "location": {"lat": 50.833333, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruydoorn", "location": {"lat": 50.916667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruys Eecke", "location": {"lat": 50.816667, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kruyshoek", "location": {"lat": 51.083333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kuurne", "location": {"lat": 50.85, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kwadebrug", "location": {"lat": 50.766667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kwadelbrug", "location": {"lat": 50.766667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kwadestraat", "location": {"lat": 50.783333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Kykuithoek", "location": {"lat": 50.816667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Laaste Oortje", "location": {"lat": 50.783333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Laatste Oortje", "location": {"lat": 50.783333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"La Barriere", "location": {"lat": 51.2, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"La Basse Ville", "location": {"lat": 50.733333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Labiettehoek", "location": {"lat": 50.966667, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"La Clytte", "location": {"lat": 50.8, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"La Croix Rouge", "location": {"lat": 50.716667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"La Douve", "location": {"lat": 50.75, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"La Garde-De-Dieu", "location": {"lat": 50.766667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lage Moere", "location": {"lat": 51.216667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"La Hutte", "location": {"lat": 50.733333, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"L'Alouette", "location": {"lat": 50.75, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lampernisse", "location": {"lat": 50.883333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lampetten", "location": {"lat": 50.933333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Landsheertje", "location": {"lat": 51.033333, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Langemarck", "location": {"lat": 50.916667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Langemark", "location": {"lat": 50.916667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Langemunte", "location": {"lat": 50.8, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Langenhoek", "location": {"lat": 51.016667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Langestraat", "location": {"lat": 50.783333, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lange Wade", "location": {"lat": 50.933333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Langewaede", "location": {"lat": 50.933333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"La Panne", "location": {"lat": 51.1, "lon": 2.583333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"La Planche", "location": {"lat": 50.733333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lapscheure", "location": {"lat": 51.283333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Laten", "location": {"lat": 50.816667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lauwe", "location": {"lat": 50.8, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Le Bizet", "location": {"lat": 50.7, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Le Chat", "location": {"lat": 50.85, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Le Compas", "location": {"lat": 50.75, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Le Coq", "location": {"lat": 51.266667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ledegem", "location": {"lat": 50.85, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ledeghem", "location": {"lat": 50.85, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leege Moere", "location": {"lat": 51.216667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leemput", "location": {"lat": 50.866667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leeuwken", "location": {"lat": 50.866667, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leeuw", "location": {"lat": 51.133333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leffinge", "location": {"lat": 51.166667, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leffinghe", "location": {"lat": 51.166667, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Le Gheer", "location": {"lat": 50.733333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leihoek", "location": {"lat": 50.85, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leikant", "location": {"lat": 50.8, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leisele", "location": {"lat": 50.983333, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leke", "location": {"lat": 51.1, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lendelede", "location": {"lat": 50.883333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"L'Enfer", "location": {"lat": 50.716667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lente Akker", "location": {"lat": 50.916667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lepelem", "location": {"lat": 51.233333, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lepe", "location": {"lat": 51.1, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lepelhem", "location": {"lat": 51.233333, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Les Ballons", "location": {"lat": 50.716667, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Les Baraques", "location": {"lat": 50.783333, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Les Quatre Rois", "location": {"lat": 50.766667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Le Touquet", "location": {"lat": 50.716667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lettenburg", "location": {"lat": 51.183333, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Le Tuquet", "location": {"lat": 50.733333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leugenboom", "location": {"lat": 51.116667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leyhoek", "location": {"lat": 50.85, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leykant", "location": {"lat": 50.9, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Leysele", "location": {"lat": 50.983333, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Le Zoute", "location": {"lat": 51.35, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lichtervelde", "location": {"lat": 51.033333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lichterveld", "location": {"lat": 51.033333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Liester", "location": {"lat": 50.95, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lijssenthoek", "location": {"lat": 50.816667, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lindeken", "location": {"lat": 50.966667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Linde", "location": {"lat": 50.95, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lindenhoek", "location": {"lat": 50.766667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lissewege", "location": {"lat": 51.3, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lisseweghe", "location": {"lat": 51.3, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lizerne", "location": {"lat": 50.916667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lobrug", "location": {"lat": 50.983333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Locre", "location": {"lat": 50.783333, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Loker", "location": {"lat": 50.783333, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lokkedyze", "location": {"lat": 51, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lokkerdijsse", "location": {"lat": 51, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lo", "location": {"lat": 50.983333, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lombaertzyde-Baden", "location": {"lat": 51.166667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lombaertzyde", "location": {"lat": 51.15, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lombardsijde-Baden", "location": {"lat": 51.166667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lombardsijde-Bad", "location": {"lat": 51.166667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lombardsijde", "location": {"lat": 51.15, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lombartsijde-Baden", "location": {"lat": 51.166667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lombartzyde-Bains", "location": {"lat": 51.166667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lombartzyde", "location": {"lat": 51.15, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Long-Bout", "location": {"lat": 50.716667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Long de Bout", "location": {"lat": 50.716667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Loobrugge", "location": {"lat": 50.983333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Loo", "location": {"lat": 50.983333, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lophem", "location": {"lat": 51.15, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Loppem", "location": {"lat": 51.15, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Lovie", "location": {"lat": 51.15, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Luigem", "location": {"lat": 50.966667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Luighem", "location": {"lat": 50.966667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Luikhoek", "location": {"lat": 51, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Luyghem", "location": {"lat": 50.966667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Luyhoek", "location": {"lat": 51, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Luzerne", "location": {"lat": 50.916667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Maagdeveld", "location": {"lat": 51.066667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Maaneghem", "location": {"lat": 50.966667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Maegdevelde", "location": {"lat": 51.066667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Maegdeveld", "location": {"lat": 51.066667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Maele", "location": {"lat": 51.216667, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Maeneghem", "location": {"lat": 50.966667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Magermeirie", "location": {"lat": 50.916667, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Magermerrie", "location": {"lat": 50.916667, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mai Cornet", "location": {"lat": 50.75, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Malcense", "location": {"lat": 50.733333, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Male", "location": {"lat": 51.216667, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Manegem", "location": {"lat": 50.966667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mangelaar", "location": {"lat": 50.933333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mangelaere", "location": {"lat": 50.933333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mangelare", "location": {"lat": 50.933333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mannekensvere", "location": {"lat": 51.133333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marckebeek", "location": {"lat": 50.816667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marckebeke", "location": {"lat": 50.816667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marckeghem", "location": {"lat": 50.95, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marcke", "location": {"lat": 50.8, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marckhove", "location": {"lat": 51.033333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mariakerke-Baden", "location": {"lat": 51.216667, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mariakerke-Bad", "location": {"lat": 51.216667, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mariakerke-Bains", "location": {"lat": 51.216667, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mariakerke", "location": {"lat": 51.216667, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marialoopkauter", "location": {"lat": 50.983333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marialoopkouter", "location": {"lat": 50.983333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marialoop", "location": {"lat": 50.966667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marionetteberge", "location": {"lat": 50.8, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marionetteberg", "location": {"lat": 50.8, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Markebeek", "location": {"lat": 50.816667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Markegem", "location": {"lat": 50.95, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Marke", "location": {"lat": 50.8, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Markhove", "location": {"lat": 51.033333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meenen", "location": {"lat": 50.8, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meerlaan", "location": {"lat": 50.85, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meerstraat", "location": {"lat": 50.816667, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meerstraet", "location": {"lat": 50.816667, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meesen", "location": {"lat": 50.766667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meetkerke", "location": {"lat": 51.233333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meiboomhoek", "location": {"lat": 50.966667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meiboom", "location": {"lat": 51.033333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meiken", "location": {"lat": 50.983333, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Menen", "location": {"lat": 50.8, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Menenpoort", "location": {"lat": 50.85, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Menin", "location": {"lat": 50.8, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Merckem", "location": {"lat": 50.95, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Merkem", "location": {"lat": 50.95, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Merkenveld", "location": {"lat": 51.133333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mesen", "location": {"lat": 50.766667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Messines", "location": {"lat": 50.766667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meulebeke", "location": {"lat": 50.95, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meulentje", "location": {"lat": 50.966667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meulewijk", "location": {"lat": 50.8, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Meyboom", "location": {"lat": 51.033333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Miami Wijk", "location": {"lat": 51.183333, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Middelkerke-Baden", "location": {"lat": 51.183333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Middelkerke-Bad", "location": {"lat": 51.183333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Middelkerke Bains", "location": {"lat": 51.183333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Middelkerke", "location": {"lat": 51.183333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mille Kapelle", "location": {"lat": 50.816667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Millekruis", "location": {"lat": 50.8, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Millekruisse", "location": {"lat": 50.8, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mille-Kruysen", "location": {"lat": 50.8, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Miserie", "location": {"lat": 51.116667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mispelburg", "location": {"lat": 51.25, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mitswege", "location": {"lat": 51.1, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mitsweg", "location": {"lat": 51.1, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moen", "location": {"lat": 50.766667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moerbrugge", "location": {"lat": 51.166667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moerdijck", "location": {"lat": 51.133333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moerdijk", "location": {"lat": 51.133333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moerdyk", "location": {"lat": 51.133333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moere", "location": {"lat": 51.05, "lon": 2.6}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moeres", "location": {"lat": 51.05, "lon": 2.6}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moereveld", "location": {"lat": 51.05, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moerhoek", "location": {"lat": 51.033333, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moerkerkebrug", "location": {"lat": 51.233333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moerkerke", "location": {"lat": 51.25, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mokker", "location": {"lat": 51.083333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molenaarelshoek", "location": {"lat": 50.866667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molenaarelsthoek", "location": {"lat": 50.866667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molenaarshoek", "location": {"lat": 50.866667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molenbruggenhoek", "location": {"lat": 51.133333, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molenbrughoek", "location": {"lat": 51.133333, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molendorp", "location": {"lat": 51.116667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molenhoek", "location": {"lat": 50.85, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molenkauter", "location": {"lat": 50.933333, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molenkouter", "location": {"lat": 50.933333, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molentje", "location": {"lat": 50.966667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Molenwijk", "location": {"lat": 51.3, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Monobloc", "location": {"lat": 51.116667, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Monoblok", "location": {"lat": 51.116667, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Mont Rouge", "location": {"lat": 50.783333, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moorseele", "location": {"lat": 50.833333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moorsele", "location": {"lat": 50.833333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moorslede", "location": {"lat": 50.883333, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moscou", "location": {"lat": 51.066667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Moskou", "location": {"lat": 51.066667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Most", "location": {"lat": 50.95, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Muijzel", "location": {"lat": 50.883333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Muiselaar", "location": {"lat": 50.983333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Muishoek", "location": {"lat": 51.033333, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Muizelaar", "location": {"lat": 50.983333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Muizel", "location": {"lat": 50.883333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Muyzelaar", "location": {"lat": 50.983333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nachtegaalhoek", "location": {"lat": 50.966667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nachtegaal", "location": {"lat": 50.866667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nachtegael", "location": {"lat": 50.966667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Neerhoek", "location": {"lat": 50.933333, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieucappelle", "location": {"lat": 51, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuport-Bains", "location": {"lat": 51.15, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuport-les-Bains", "location": {"lat": 51.15, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuport", "location": {"lat": 51.133333, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwdorp", "location": {"lat": 51.3, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwege", "location": {"lat": 51.216667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuweghe", "location": {"lat": 51.216667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuweherberg", "location": {"lat": 51, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwemolen", "location": {"lat": 50.883333, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwenhove", "location": {"lat": 50.866667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwenmolen", "location": {"lat": 50.883333, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwestede", "location": {"lat": 50.966667, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwkapelle", "location": {"lat": 51, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwkerke", "location": {"lat": 50.75, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwmunster", "location": {"lat": 51.283333, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwpoort-Baden", "location": {"lat": 51.15, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwpoort-Bad", "location": {"lat": 51.15, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nieuwpoort", "location": {"lat": 51.133333, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Noordhoek", "location": {"lat": 50.9, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Noordhofwijk", "location": {"lat": 50.866667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Noordschotebroeck", "location": {"lat": 50.966667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Noordschotebroek", "location": {"lat": 50.966667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Noordschote", "location": {"lat": 50.95, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Noordstraat", "location": {"lat": 51.133333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Noordveldhoek", "location": {"lat": 51.066667, "lon": 2.566667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Nord Slykens", "location": {"lat": 51.216667, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oedelem", "location": {"lat": 51.166667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oekene", "location": {"lat": 50.916667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oeren", "location": {"lat": 51.033333, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oeselgem", "location": {"lat": 50.933333, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oesselghem", "location": {"lat": 50.933333, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Okkerwijk", "location": {"lat": 50.8, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Olekenbos", "location": {"lat": 50.833333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ondank", "location": {"lat": 51.016667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ooievaarmolen", "location": {"lat": 51.116667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ooigem", "location": {"lat": 50.883333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ooivaartmolenhoek", "location": {"lat": 51.116667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ooivaartmolen", "location": {"lat": 51.116667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oolekenbosch", "location": {"lat": 50.833333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostcamp", "location": {"lat": 51.15, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostduinekerke-Bad", "location": {"lat": 51.132778, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostduinkerke-Bad", "location": {"lat": 51.132778, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostduinkerke", "location": {"lat": 51.116667, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oost-Dunkerke-Bains", "location": {"lat": 51.116667, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oost-Dunkerke", "location": {"lat": 51.116667, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostende", "location": {"lat": 50.766667, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oosthoek", "location": {"lat": 50.8, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostkamp", "location": {"lat": 51.15, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostkerke", "location": {"lat": 51.05, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostnieuwkerke", "location": {"lat": 50.933333, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostroosebeke", "location": {"lat": 50.916667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostroozebeke", "location": {"lat": 50.916667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostrozebeke", "location": {"lat": 50.916667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oosttaverne", "location": {"lat": 50.783333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostveld", "location": {"lat": 51.166667, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostvleteren", "location": {"lat": 50.933333, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostzijde", "location": {"lat": 51.166667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oostzyde", "location": {"lat": 51.166667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ootegem", "location": {"lat": 50.8, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ooteghem", "location": {"lat": 50.8, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ostende", "location": {"lat": 51.216667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ostend", "location": {"lat": 51.216667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Otegem", "location": {"lat": 50.8, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ouckene", "location": {"lat": 50.916667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oudank", "location": {"lat": 51.066667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oudecappelle", "location": {"lat": 51.016667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oudekapelle", "location": {"lat": 51.016667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oudenburg", "location": {"lat": 51.183333, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ouderdom", "location": {"lat": 50.816667, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oud Stuivekenskerke", "location": {"lat": 51.066667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oud Stuyvekenskerke", "location": {"lat": 51.066667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oud Stuyvekens", "location": {"lat": 51.066667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Outrijve", "location": {"lat": 50.75, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Overdeeye", "location": {"lat": 50.95, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Overdije", "location": {"lat": 50.95, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Overheule", "location": {"lat": 50.85, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Oyghem", "location": {"lat": 50.883333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Paanders", "location": {"lat": 50.933333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Paddegat", "location": {"lat": 51.2, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pallemaat", "location": {"lat": 51, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pallemaet", "location": {"lat": 51, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Panemolen", "location": {"lat": 50.833333, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Panne", "location": {"lat": 51.1, "lon": 2.583333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Papestraat", "location": {"lat": 50.783333, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Papevijvers", "location": {"lat": 51.116667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Parochieveld", "location": {"lat": 51.083333, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Parochieweld", "location": {"lat": 51.083333, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Passchendaele", "location": {"lat": 50.9, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Passchendale", "location": {"lat": 50.9, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Passendale", "location": {"lat": 50.9, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Peereboom", "location": {"lat": 51.266667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Peerstalle", "location": {"lat": 51.083333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pelican", "location": {"lat": 51.116667, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pelikaan", "location": {"lat": 51.116667, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Perdstalle", "location": {"lat": 51.083333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pereboom", "location": {"lat": 51.033333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Perenboom", "location": {"lat": 51.266667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pervijze", "location": {"lat": 51.083333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pervyse", "location": {"lat": 51.083333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Peselhoek", "location": {"lat": 50.866667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Petite de Menin", "location": {"lat": 50.85, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Petite Flandre", "location": {"lat": 50.7, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Petit-Pont", "location": {"lat": 50.733333, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Petit-Tourcoing", "location": {"lat": 50.75, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Petit Voisinage", "location": {"lat": 50.75, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pierkenshoek", "location": {"lat": 50.966667, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pierlaponthoek", "location": {"lat": 51.133333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pietakker", "location": {"lat": 51.05, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pijpegale", "location": {"lat": 50.916667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pijpestraat", "location": {"lat": 50.716667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pilckem", "location": {"lat": 50.9, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pittem", "location": {"lat": 51, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pitthem", "location": {"lat": 51, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Plasschendaele", "location": {"lat": 51.216667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Plasschendale", "location": {"lat": 51.216667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Plassendaal", "location": {"lat": 51.216667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Plassendale", "location": {"lat": 51.216667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Platheule", "location": {"lat": 51.266667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pleine", "location": {"lat": 51.15, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pleyne", "location": {"lat": 51.15, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pleyn", "location": {"lat": 51.15, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poelberg", "location": {"lat": 50.983333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poelcappelle", "location": {"lat": 50.916667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poeldries", "location": {"lat": 50.75, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poelkapelle", "location": {"lat": 50.916667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poermolen", "location": {"lat": 51.3, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poesele", "location": {"lat": 50.95, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poesel", "location": {"lat": 50.95, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poezelhoek", "location": {"lat": 50.85, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pollinchove", "location": {"lat": 50.966667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pollinkhove", "location": {"lat": 50.966667, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pompje", "location": {"lat": 51.2, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pomptje", "location": {"lat": 51.2, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pont d Boesinghe", "location": {"lat": 50.883333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ponthoek", "location": {"lat": 50.95, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pont Rouge", "location": {"lat": 50.733333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poorterhoek", "location": {"lat": 51.083333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poortershoek", "location": {"lat": 51.083333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Popeliere", "location": {"lat": 51.05, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poperinge", "location": {"lat": 50.85, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poperinghe", "location": {"lat": 50.85, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Posthoornhoek", "location": {"lat": 50.8, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Potegem", "location": {"lat": 50.866667, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Poteghem", "location": {"lat": 50.866667, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Potijze", "location": {"lat": 50.85, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Potijzer", "location": {"lat": 50.766667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pottebesem", "location": {"lat": 51.083333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pottebezemhoek", "location": {"lat": 51.066667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pottebezem", "location": {"lat": 51.083333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pottelberg", "location": {"lat": 50.8, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Preekboom", "location": {"lat": 51.25, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Presende", "location": {"lat": 51.033333, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Presente", "location": {"lat": 51.033333, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Preshoek", "location": {"lat": 50.783333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Prijshoek", "location": {"lat": 50.783333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Proven", "location": {"lat": 50.883333, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pryshoek", "location": {"lat": 50.783333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Puitsarmoede", "location": {"lat": 51.083333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Puytsarmoede", "location": {"lat": 51.083333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Pypegaale", "location": {"lat": 50.916667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Quatre Rois", "location": {"lat": 50.766667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Quevaucamp", "location": {"lat": 50.716667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Quevaucamps", "location": {"lat": 50.716667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Raaptorf", "location": {"lat": 50.766667, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rakske", "location": {"lat": 51.066667, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ramscappelle", "location": {"lat": 51.116667, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ramskapelle", "location": {"lat": 51.116667, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rateling", "location": {"lat": 51.05, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rattekot", "location": {"lat": 50.833333, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rattevalle", "location": {"lat": 51.15, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ratteval", "location": {"lat": 51.15, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Raversijde-Baden", "location": {"lat": 51.2, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Raversijde-Bad", "location": {"lat": 51.2, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Raversijde-Bains", "location": {"lat": 51.2, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Raversijde", "location": {"lat": 51.2, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Raversyde", "location": {"lat": 51.2, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reckem", "location": {"lat": 50.783333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reeke", "location": {"lat": 50.783333, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reigerie", "location": {"lat": 50.95, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reigerloo", "location": {"lat": 51.116667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reigerlo", "location": {"lat": 51.116667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reiger", "location": {"lat": 51.083333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reke", "location": {"lat": 50.783333, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rekkem", "location": {"lat": 50.783333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reningelst", "location": {"lat": 50.816667, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reninge", "location": {"lat": 50.95, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reninghelst", "location": {"lat": 50.816667, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reninghe", "location": {"lat": 50.95, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reutelhoek", "location": {"lat": 50.85, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reutel", "location": {"lat": 50.85, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Reygerie", "location": {"lat": 50.95, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rick", "location": {"lat": 51.05, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Riek", "location": {"lat": 51.05, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rijken", "location": {"lat": 51.033333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rijsberge", "location": {"lat": 51.083333, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rille", "location": {"lat": 50.983333, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Risquons Tout", "location": {"lat": 50.75, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Robrechtegem", "location": {"lat": 50.983333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Robrechteghem", "location": {"lat": 50.983333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roesbrugge-Haringe", "location": {"lat": 50.916667, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roesbrugge", "location": {"lat": 50.916667, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roesdamme", "location": {"lat": 51.066667, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roeselare", "location": {"lat": 50.95, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roeselave", "location": {"lat": 50.95, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roggeveld", "location": {"lat": 51.016667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roijveld", "location": {"lat": 51.116667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rokershoek", "location": {"lat": 50.733333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roksem", "location": {"lat": 51.166667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rollegem-Kapelle", "location": {"lat": 50.866667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rollegem", "location": {"lat": 50.766667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rolleghemcappelle", "location": {"lat": 50.866667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rolleghem", "location": {"lat": 50.766667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rolleweg", "location": {"lat": 51.15, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Romarin", "location": {"lat": 50.716667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ronehoek", "location": {"lat": 50.983333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roobaert", "location": {"lat": 50.883333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roodbaard", "location": {"lat": 50.883333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roodbaart", "location": {"lat": 50.883333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rooiveld", "location": {"lat": 51.116667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rookershoek", "location": {"lat": 50.733333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roonehoek", "location": {"lat": 50.983333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roozeboom", "location": {"lat": 51.1, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roozeveldhoek", "location": {"lat": 51.083333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roulers", "location": {"lat": 50.95, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rousdamme", "location": {"lat": 51.066667, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rouselare", "location": {"lat": 50.95, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Roxem", "location": {"lat": 51.166667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Royveld", "location": {"lat": 51.116667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rozeboom", "location": {"lat": 51.1, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rozenhoek", "location": {"lat": 50.8, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rozeveldhoek", "location": {"lat": 51.083333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ruddervoorde", "location": {"lat": 51.1, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rugge", "location": {"lat": 50.783333, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ruidenberg", "location": {"lat": 51.066667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ruiselede", "location": {"lat": 51.05, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ruiterhoek", "location": {"lat": 51, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Rumbeke", "location": {"lat": 50.933333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ruysselede", "location": {"lat": 51.05, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ruyterhoek", "location": {"lat": 51, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ryken", "location": {"lat": 51.033333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sainte-Anne", "location": {"lat": 50.783333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sainte-Catherine", "location": {"lat": 51.25, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sainte-Croix", "location": {"lat": 51.216667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Genois", "location": {"lat": 50.75, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Georges", "location": {"lat": 51.133333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Hubert", "location": {"lat": 51.083333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint Idesbalde", "location": {"lat": 51.116667, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint Ivon", "location": {"lat": 50.733333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Jacques-Cappelle", "location": {"lat": 51.016667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Jean", "location": {"lat": 50.866667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Joseph", "location": {"lat": 51, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Julien", "location": {"lat": 50.883333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint Louis", "location": {"lat": 50.816667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Michel", "location": {"lat": 51.183333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Pierre-Cappelle", "location": {"lat": 51.133333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint Pierre", "location": {"lat": 51.233333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint Pierre-sur-la-Digue", "location": {"lat": 51.233333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Ricquiers", "location": {"lat": 51, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Saint-Yvon", "location": {"lat": 50.733333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Salinus", "location": {"lat": 50.833333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sas-Slijkens", "location": {"lat": 51.216667, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sas-Slykens", "location": {"lat": 51.216667, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaakse", "location": {"lat": 51.05, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaakske", "location": {"lat": 51.05, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaap-Balie", "location": {"lat": 50.933333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaap Balir", "location": {"lat": 50.933333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaare", "location": {"lat": 51.1, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaawege", "location": {"lat": 51.233333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schacpen Brug", "location": {"lat": 51.316667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaekske", "location": {"lat": 51.05, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaelske", "location": {"lat": 51.05, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaep Baillie", "location": {"lat": 50.933333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaere", "location": {"lat": 51.1, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schaleske", "location": {"lat": 51.05, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schapenbrug", "location": {"lat": 51.316667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Scharebrug", "location": {"lat": 51.283333, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schare", "location": {"lat": 51.1, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Scheepsdaele", "location": {"lat": 51.216667, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Scheepsdale", "location": {"lat": 51.216667, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Scheewege", "location": {"lat": 51.066667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Scheeweghe", "location": {"lat": 51.233333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Scheidhoek", "location": {"lat": 50.816667, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Scherminkelmolen", "location": {"lat": 50.966667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schewege", "location": {"lat": 51.233333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schiethoek", "location": {"lat": 50.966667, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schoeringbrug", "location": {"lat": 51.266667, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schoonwater", "location": {"lat": 50.833333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schoorbakke", "location": {"lat": 51.1, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schoore", "location": {"lat": 51.116667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schore", "location": {"lat": 51.116667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schoudemonthoek", "location": {"lat": 50.833333, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schuddebeurs", "location": {"lat": 51.05, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schuddebeurze", "location": {"lat": 51.05, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schuiferskapelle", "location": {"lat": 51.033333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Schuyfferscappelle", "location": {"lat": 51.033333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Serpenthoek", "location": {"lat": 51, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'s Gravenstafel", "location": {"lat": 50.883333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'s Gravenstaffel", "location": {"lat": 50.883333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'s Heerwillems-Cappelle", "location": {"lat": 51.083333, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'s Heerwillemskapelle", "location": {"lat": 51.083333, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sijsele", "location": {"lat": 51.2, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sijseleveld", "location": {"lat": 51.216667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sijsloo", "location": {"lat": 51.1, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sijslo", "location": {"lat": 51.1, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Andries", "location": {"lat": 51.2, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Anna", "location": {"lat": 50.783333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Baafs-Vijve", "location": {"lat": 50.9, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Denijs", "location": {"lat": 50.75, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Eloois", "location": {"lat": 50.8, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Eloois-Vijve", "location": {"lat": 50.9, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Eloois-Winkel", "location": {"lat": 50.866667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Hubertushoek", "location": {"lat": 50.816667, "lon": 2.8}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Hubertus", "location": {"lat": 51.083333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Idesbald", "location": {"lat": 51.116667, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Jacobs-Kapelle", "location": {"lat": 51.016667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Jan Hagebaart", "location": {"lat": 50.85, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Jan-op-den-Dijk", "location": {"lat": 51.283333, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Jan", "location": {"lat": 50.866667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Jans op den Dijk", "location": {"lat": 51.283333, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Jans ter Biezen", "location": {"lat": 50.866667, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Jan ter Biezen", "location": {"lat": 50.866667, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Jooris", "location": {"lat": 51.133333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Joris", "location": {"lat": 51.133333, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Joris-ten-Distel", "location": {"lat": 51.133333, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Juliaan", "location": {"lat": 50.883333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Katarina Kapel", "location": {"lat": 50.866667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Katelijne-Kapelle", "location": {"lat": 50.866667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Katelijne", "location": {"lat": 51.25, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Kruis", "location": {"lat": 51.216667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Lodewijk", "location": {"lat": 50.816667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Michiels", "location": {"lat": 51.183333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Pieters-Cappelle", "location": {"lat": 51, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Pieters-Dyk", "location": {"lat": 51.233333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Pieter", "location": {"lat": 50.866667, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Pieters-Kapelle", "location": {"lat": 51.133333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Pietersknok", "location": {"lat": 50.9, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Pieters op de Dijk", "location": {"lat": 51.233333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint Pieters", "location": {"lat": 51.233333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Pieters", "location": {"lat": 51, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Pieters Veld", "location": {"lat": 51.083333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Rijkers", "location": {"lat": 51, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint Sixte", "location": {"lat": 50.883333, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sint-Sixtus", "location": {"lat": 50.883333, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slarrin", "location": {"lat": 51.05, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sleihage", "location": {"lat": 50.966667, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sleijhage", "location": {"lat": 50.966667, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sleyhaegehoek", "location": {"lat": 50.966667, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slijken Sas", "location": {"lat": 51.216667, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slijpebrug", "location": {"lat": 51.166667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slijpe", "location": {"lat": 51.15, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slijphoek", "location": {"lat": 50.866667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slijpshoek", "location": {"lat": 50.866667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slijpskappelle", "location": {"lat": 50.866667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sluinsken", "location": {"lat": 51, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sluisken", "location": {"lat": 51, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sluyps-Kappelle", "location": {"lat": 50.866667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slykene-Sas", "location": {"lat": 51.216667, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slykens", "location": {"lat": 51.216667, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slypebrug", "location": {"lat": 51.166667, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slype", "location": {"lat": 51.15, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slypshoek", "location": {"lat": 50.866667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slypskappelle", "location": {"lat": 50.866667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Slyskapelle", "location": {"lat": 50.866667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Smeier", "location": {"lat": 50.816667, "lon": 3.5}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Smeir", "location": {"lat": 50.816667, "lon": 3.5}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Smellegem", "location": {"lat": 51.166667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Smisse", "location": {"lat": 50.983333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Smoorken", "location": {"lat": 50.883333, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Snaaskerkepolder", "location": {"lat": 51.183333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Snaaskerke", "location": {"lat": 51.183333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Snaaskerksepolder", "location": {"lat": 51.183333, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Snaeskerke", "location": {"lat": 51.183333, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Snellegem", "location": {"lat": 51.166667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Snelleghem", "location": {"lat": 51.166667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Snephoek", "location": {"lat": 50.85, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sparappelhoek", "location": {"lat": 51.1, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Spermalie", "location": {"lat": 51.116667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Spiere", "location": {"lat": 50.716667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Spinnekens", "location": {"lat": 50.966667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Spitaal", "location": {"lat": 50.866667, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Spriete", "location": {"lat": 50.866667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Spriethoek", "location": {"lat": 50.916667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Spriet", "location": {"lat": 50.916667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Staceghem", "location": {"lat": 50.833333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stadenberg", "location": {"lat": 50.966667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stadenreke", "location": {"lat": 50.966667, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Staden", "location": {"lat": 50.983333, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stakendijk", "location": {"lat": 51.216667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stakendyk", "location": {"lat": 51.216667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stalhillebrugge", "location": {"lat": 51.2, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stalhillebrug", "location": {"lat": 51.2, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stalhille", "location": {"lat": 51.216667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stalijzer", "location": {"lat": 50.983333, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stalyzer", "location": {"lat": 50.983333, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stampkot", "location": {"lat": 50.966667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stasegem", "location": {"lat": 50.833333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stavelehoekje", "location": {"lat": 50.933333, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stavele", "location": {"lat": 50.933333, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stavelhoekje", "location": {"lat": 50.933333, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Steenbrugge", "location": {"lat": 50.833333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Steendam", "location": {"lat": 50.966667, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Steene", "location": {"lat": 51.2, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Steenkerke", "location": {"lat": 51.05, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Steenstraat", "location": {"lat": 50.916667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Steert", "location": {"lat": 50.766667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stenenstampkot", "location": {"lat": 50.85, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stene", "location": {"lat": 51.2, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sterhoek", "location": {"lat": 50.766667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sterrekenshoek", "location": {"lat": 50.883333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stokerijhoek", "location": {"lat": 51.033333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stokerij", "location": {"lat": 50.866667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stokeryhoek", "location": {"lat": 51.033333, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stoomtuig", "location": {"lat": 50.983333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stoontuig", "location": {"lat": 50.983333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Strodorp", "location": {"lat": 51.3, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Strokot", "location": {"lat": 51.05, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Strooiendorp", "location": {"lat": 51.283333, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Strooienhaan", "location": {"lat": 51.25, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Strookot", "location": {"lat": 51.05, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stuivekenskerke", "location": {"lat": 51.083333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stuivenberge", "location": {"lat": 51.15, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stuivenberghe", "location": {"lat": 51.15, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stuivenbergh", "location": {"lat": 51.166667, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stuivenberg", "location": {"lat": 51.15, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Stuyvekenskerke", "location": {"lat": 51.083333, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sud Slykens", "location": {"lat": 51.216667, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sweveghem", "location": {"lat": 50.8, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Swevezeele", "location": {"lat": 51.033333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sysloo", "location": {"lat": 51.1, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sysseele", "location": {"lat": 51.2, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Sysseeleveld", "location": {"lat": 51.216667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tasse", "location": {"lat": 50.95, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tenbrielen", "location": {"lat": 50.8, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tenheide", "location": {"lat": 50.866667, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tenhove", "location": {"lat": 50.783333, "lon": 3.483333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Terhand", "location": {"lat": 50.833333, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Terkeien", "location": {"lat": 50.966667, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Terrest", "location": {"lat": 50.983333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tervaete", "location": {"lat": 51.083333, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tervate Brug", "location": {"lat": 51.083333, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tervate", "location": {"lat": 51.083333, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'T Fort", "location": {"lat": 51.066667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'t Heetje", "location": {"lat": 50.883333, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Thielt", "location": {"lat": 51, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'t Hoge", "location": {"lat": 50.8, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"t'Hooge", "location": {"lat": 50.983333, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'T Hooghe", "location": {"lat": 50.8, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Thourout", "location": {"lat": 51.066667, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tiegem", "location": {"lat": 50.8, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tieghem", "location": {"lat": 50.8, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tielt", "location": {"lat": 51, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tiendenberg", "location": {"lat": 50.933333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'t Molentje", "location": {"lat": 50.733333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tolhoek", "location": {"lat": 50.966667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tolpenhoek", "location": {"lat": 50.766667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tombroek", "location": {"lat": 50.75, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tommehoek", "location": {"lat": 51.016667, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tooverhoek", "location": {"lat": 50.916667, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Torhout", "location": {"lat": 51.066667, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Touquet Berthe", "location": {"lat": 50.716667, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Touquet", "location": {"lat": 50.733333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Toverhoek", "location": {"lat": 50.916667, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Trieu Cousme", "location": {"lat": 50.716667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Troetelaare", "location": {"lat": 51.05, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Troetelaar", "location": {"lat": 51.05, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Trois Rois", "location": {"lat": 51.133333, "lon": 3.283333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'t Smisje", "location": {"lat": 51.266667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'t Smisken", "location": {"lat": 51.266667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tuimelaarehoek", "location": {"lat": 50.883333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tuimelaarhoek", "location": {"lat": 50.883333, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Tuquet", "location": {"lat": 50.733333, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Turfhauwehoek", "location": {"lat": 51.05, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Turfhauwe", "location": {"lat": 51.05, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Turkeyenhoek", "location": {"lat": 50.983333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Turkeyen", "location": {"lat": 50.966667, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Turkijenhoek", "location": {"lat": 50.983333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Turkijen", "location": {"lat": 50.966667, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Turkije", "location": {"lat": 51.233333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Turkyen", "location": {"lat": 50.966667, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"'t Zwin", "location": {"lat": 51.366667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Uitkerke", "location": {"lat": 51.3, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Uytkerke", "location": {"lat": 51.3, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vaaghof", "location": {"lat": 51.05, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vaartkant", "location": {"lat": 51.016667, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vaertkant", "location": {"lat": 51.016667, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Varent", "location": {"lat": 50.8, "lon": 3.5}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Varsenare", "location": {"lat": 51.183333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Varssenaere", "location": {"lat": 51.183333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Veerke", "location": {"lat": 50.8, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Veldegem", "location": {"lat": 51.1, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Veldeghem", "location": {"lat": 51.1, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Veldhoek", "location": {"lat": 50.833333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Veld", "location": {"lat": 51.083333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Verbrande Molen", "location": {"lat": 50.816667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Verbrandenmolen", "location": {"lat": 50.816667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vergelderhoek", "location": {"lat": 50.966667, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Verlorenhoek", "location": {"lat": 50.85, "lon": 2.933333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Veurne", "location": {"lat": 51.066667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vichte", "location": {"lat": 50.833333, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vierkavenhoek", "location": {"lat": 50.916667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vierschaar", "location": {"lat": 51, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vierstraat", "location": {"lat": 50.8, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vierwegen", "location": {"lat": 51.283333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vierwege", "location": {"lat": 51.283333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vierweghe", "location": {"lat": 51.283333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vieux Chien", "location": {"lat": 50.816667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijfhuishoek", "location": {"lat": 51.05, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijfhuizen", "location": {"lat": 50.983333, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijf Knok", "location": {"lat": 51.15, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijfwegen", "location": {"lat": 50.833333, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijf Wegen", "location": {"lat": 51.15, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijfwegen", "location": {"lat": 51.233333, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijfwege", "location": {"lat": 50.933333, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijfweghe", "location": {"lat": 51.233333, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijtstraat", "location": {"lat": 51.066667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijve Kapelle", "location": {"lat": 51.233333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijverhoek", "location": {"lat": 50.816667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijversmolenhoek", "location": {"lat": 51.1, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vijver", "location": {"lat": 51.1, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vinckem", "location": {"lat": 51.016667, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vinkem", "location": {"lat": 51.016667, "lon": 2.65}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vinkenhoek", "location": {"lat": 50.8, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vive-Saint-Bavon", "location": {"lat": 50.9, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vlaa", "location": {"lat": 50.983333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vladsloo", "location": {"lat": 51.05, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vladslo", "location": {"lat": 51.05, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vlae", "location": {"lat": 50.983333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vlamertinge", "location": {"lat": 50.85, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vlamertinghe", "location": {"lat": 50.85, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vla", "location": {"lat": 50.983333, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vliegendepaard", "location": {"lat": 51.183333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vliegendpaard", "location": {"lat": 51.183333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vlienderhaege", "location": {"lat": 51.283333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vlienderhage", "location": {"lat": 51.283333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vlinderhaag", "location": {"lat": 51.283333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vlissegem", "location": {"lat": 51.25, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vlisseghem", "location": {"lat": 51.25, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Voormezeele", "location": {"lat": 50.816667, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Voormezele", "location": {"lat": 50.816667, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Voshoek", "location": {"lat": 51.016667, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vosputhoek", "location": {"lat": 51.066667, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vosput", "location": {"lat": 51.066667, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vossemolen", "location": {"lat": 50.9, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vossenhoek", "location": {"lat": 50.833333, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vrede", "location": {"lat": 51.333333, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vrijgeweed", "location": {"lat": 51.066667, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vroilandhoek", "location": {"lat": 50.766667, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vrouwenboom", "location": {"lat": 51.016667, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vuilepan", "location": {"lat": 51, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vuilpan", "location": {"lat": 51, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vuilvlage", "location": {"lat": 51.233333, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vyfhuyshoek", "location": {"lat": 51.05, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vyfhuyzen", "location": {"lat": 50.983333, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vyfwege", "location": {"lat": 50.95, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vyve Kapelle", "location": {"lat": 51.233333, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vyversmolenhoek", "location": {"lat": 51.1, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Vyver", "location": {"lat": 51.1, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waalshoek", "location": {"lat": 50.883333, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waarbrugge", "location": {"lat": 51.15, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waarbrug", "location": {"lat": 51.15, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waardamme", "location": {"lat": 51.116667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waarmaarde", "location": {"lat": 50.783333, "lon": 3.483333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wacken", "location": {"lat": 50.933333, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waerbrugge", "location": {"lat": 51.15, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waerdamme", "location": {"lat": 51.116667, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waerebrug", "location": {"lat": 51.15, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waereghem", "location": {"lat": 50.883333, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waermaerde", "location": {"lat": 50.783333, "lon": 3.483333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waffelstraat", "location": {"lat": 50.783333, "lon": 3.433333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wakken", "location": {"lat": 50.933333, "lon": 3.4}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Walbrugge", "location": {"lat": 50.8, "lon": 3.466667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wallemolen", "location": {"lat": 50.9, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Walle", "location": {"lat": 50.8, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wal", "location": {"lat": 50.8, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wambeke", "location": {"lat": 50.783333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Warandeken", "location": {"lat": 50.883333, "lon": 3.45}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Warande", "location": {"lat": 51.1, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waregem", "location": {"lat": 50.883333, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waterdamhoek", "location": {"lat": 50.866667, "lon": 3.05}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Waterhoek", "location": {"lat": 50.95, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Watermolen", "location": {"lat": 50.833333, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Watou", "location": {"lat": 50.85, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Weegschede", "location": {"lat": 50.966667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Weegscheede", "location": {"lat": 50.966667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Weidendrift", "location": {"lat": 50.916667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wellingstraat", "location": {"lat": 51.133333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wemaar Gilde", "location": {"lat": 50.716667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wenduine", "location": {"lat": 51.3, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wenduyne", "location": {"lat": 51.3, "lon": 3.083333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wercken", "location": {"lat": 51.033333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Werken", "location": {"lat": 51.033333, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wervicq", "location": {"lat": 50.783333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wervik", "location": {"lat": 50.783333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westcapelle", "location": {"lat": 51.316667, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westcappelle", "location": {"lat": 51.316667, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westende-Baden", "location": {"lat": 51.166667, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westende-Bad", "location": {"lat": 51.166667, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westende-Bains", "location": {"lat": 51.166667, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westende", "location": {"lat": 51.166667, "lon": 2.766667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westhoek", "location": {"lat": 50.7, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westkant", "location": {"lat": 51.066667, "lon": 3.183333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westkapelle", "location": {"lat": 51.316667, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westkerke", "location": {"lat": 51.166667, "lon": 3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westouter", "location": {"lat": 50.8, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westoutre", "location": {"lat": 50.8, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westroosebeke", "location": {"lat": 50.933333, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westroozebeke", "location": {"lat": 50.933333, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westrozebeke", "location": {"lat": 50.933333, "lon": 3.016667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Westvleteren", "location": {"lat": 50.933333, "lon": 2.716667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wevelgem", "location": {"lat": 50.8, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wevelghem", "location": {"lat": 50.8, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wezelhoek", "location": {"lat": 50.8, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wielsbeke", "location": {"lat": 50.9, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wieltje", "location": {"lat": 50.866667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wierweghe", "location": {"lat": 51.283333, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wijnberg", "location": {"lat": 50.816667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wijnendaale", "location": {"lat": 50.966667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wijnendaal", "location": {"lat": 50.966667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wijnendale", "location": {"lat": 50.966667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wijtschate", "location": {"lat": 50.783333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wijtstraat", "location": {"lat": 51.066667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wijtwege", "location": {"lat": 51.033333, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wildenburg", "location": {"lat": 51.083333, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wilskerke", "location": {"lat": 51.183333, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wingene", "location": {"lat": 51.066667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Winkelhoek", "location": {"lat": 50.9, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wippenhoek", "location": {"lat": 50.816667, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Witte Brug", "location": {"lat": 51.116667, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Witte Burg", "location": {"lat": 51.116667, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Witte Poorthoek", "location": {"lat": 51.083333, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Woesten", "location": {"lat": 50.9, "lon": 2.783333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Woumen", "location": {"lat": 51, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wulfdam", "location": {"lat": 50.85, "lon": 3.15}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wulgebroek", "location": {"lat": 51.166667, "lon": 3.233333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wulpendamme", "location": {"lat": 51.083333, "lon": 2.683333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wulpen", "location": {"lat": 51.1, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wulvergem", "location": {"lat": 50.75, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wulverghem", "location": {"lat": 50.75, "lon": 2.85}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wulveringem", "location": {"lat": 51.016667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wulveringhem", "location": {"lat": 51.016667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wydendreft", "location": {"lat": 50.916667, "lon": 2.9}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wynendaele", "location": {"lat": 50.966667, "lon": 3.116667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wynendael", "location": {"lat": 51.083333, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wynghene", "location": {"lat": 51.066667, "lon": 3.266667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wytschaete", "location": {"lat": 50.783333, "lon": 2.866667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Wytstraat", "location": {"lat": 51.066667, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Ypres", "location": {"lat": 50.85, "lon": 2.883333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zandberg", "location": {"lat": 50.933333, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zandeke Molen", "location": {"lat": 51.05, "lon": 2.7}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zandevlakte", "location": {"lat": 51.116667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zande", "location": {"lat": 51.116667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zandvlakte", "location": {"lat": 51.116667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zandvoordebrugge", "location": {"lat": 51.183333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zandvoordebrug", "location": {"lat": 51.183333, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zandvoorde", "location": {"lat": 50.816667, "lon": 2.966667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zarrelinge", "location": {"lat": 51.016667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zarrenlinde", "location": {"lat": 51.016667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zarren", "location": {"lat": 51.016667, "lon": 2.95}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zavelhoek", "location": {"lat": 51, "lon": 2.733333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zedelgem", "location": {"lat": 51.15, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zedelghem", "location": {"lat": 51.15, "lon": 3.133333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zeebrugge", "location": {"lat": 51.333333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zeemanshaard", "location": {"lat": 51.333333, "lon": 3.216667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zeepanne", "location": {"lat": 51.1, "lon": 2.616667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zeldonckhoek", "location": {"lat": 51.133333, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zeldonck", "location": {"lat": 51.15, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zeldonkhoek", "location": {"lat": 51.133333, "lon": 3.366667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zeldonk", "location": {"lat": 51.15, "lon": 3.383333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zelte", "location": {"lat": 51.15, "lon": 2.816667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zerkegem", "location": {"lat": 51.166667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zerkeghem", "location": {"lat": 51.166667, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zeswegen", "location": {"lat": 51.033333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zeswege", "location": {"lat": 51.033333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zevecoote", "location": {"lat": 51.183333, "lon": 3.066667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zevecoten", "location": {"lat": 50.766667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zevecote", "location": {"lat": 51.133333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zevekote", "location": {"lat": 50.766667, "lon": 3.25}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zillebeke", "location": {"lat": 50.833333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zilverberg", "location": {"lat": 50.916667, "lon": 3.1}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zoetenaey", "location": {"lat": 51.05, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zonnebeke", "location": {"lat": 50.866667, "lon": 2.983333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zonnebergen", "location": {"lat": 50.783333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zonneberghen", "location": {"lat": 50.783333, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zoutenaaie", "location": {"lat": 51.05, "lon": 2.75}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zoute", "location": {"lat": 51.35, "lon": 3.3}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zuiddamme", "location": {"lat": 51.15, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zuidhoek", "location": {"lat": 50.833333, "lon": 3.033333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zuidschote", "location": {"lat": 50.916667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zuidwijk", "location": {"lat": 51.033333, "lon": 3.416667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zuienkerke", "location": {"lat": 51.266667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zuyddamme", "location": {"lat": 51.15, "lon": 3.35}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zuydschoote", "location": {"lat": 50.916667, "lon": 2.833333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zuyenkerke", "location": {"lat": 51.266667, "lon": 3.166667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwaantjehoek", "location": {"lat": 50.9, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwaantjeshoek", "location": {"lat": 50.9, "lon": 3.316667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwaantje", "location": {"lat": 51.016667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwaan", "location": {"lat": 51.216667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwaene", "location": {"lat": 51.216667, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwaenge", "location": {"lat": 51.016667, "lon": 2.633333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwankendamme", "location": {"lat": 51.316667, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwartegat", "location": {"lat": 50.983333, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwarteleen", "location": {"lat": 50.816667, "lon": 2.916667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwarte-Peerd", "location": {"lat": 51.016667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwartpaard", "location": {"lat": 51.016667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwart-Paerd", "location": {"lat": 51.016667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwart Peerd", "location": {"lat": 51.016667, "lon": 2.666667}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwevegem", "location": {"lat": 50.8, "lon": 3.333333}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwevezele", "location": {"lat": 51.033333, "lon": 3.2}}
+{"index":{"_index":"cities","_type":"city"}}
+{"city":"Zwin", "location": {"lat": 51.366667, "lon": 3.366667}}

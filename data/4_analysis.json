@@ -1,0 +1,25 @@
+POST /_analyze
+{
+  "analyzer": "standard",
+  "text": "Hey man, how are you doing?"
+}
+POST /_analyze
+{
+  "analyzer": "whitespace",
+  "text": "Hey man, how are you doing?"
+}
+POST /_analyze
+{
+  "analyzer": "english",
+  "text": "Hey man, how are you doing?"
+}
+POST /_analyze
+{
+  "analyzer": "dutch",
+  "text": "Hey man, how are you doing?"
+}
+POST /_analyze
+{
+  "analyzer": "dutch",
+  "text": "De koetsier poetst de postkoets met postkoetspoets"
+}

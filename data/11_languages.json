@@ -1,0 +1,36 @@
+#Look for "work" in standard analyzed field
+POST /blog/_search
+{
+  "query": {
+    "match": {
+      "title": "work"
+    }
+  }
+}
+#Look for "work" in English analyzed field
+POST /blog/_search
+{
+  "query": {
+    "match": {
+      "title.en": "work"
+    }
+  }
+}
+#Look for "werk" in standard analyzed field
+POST /blog/_search
+{
+  "query": {
+    "match": {
+      "title": "werk"
+    }
+  }
+}
+#Look for "werk" in Dutch analyzed field
+POST /blog/_search
+{
+  "query": {
+    "match": {
+      "title.nl": "werk"
+    }
+  }
+}
