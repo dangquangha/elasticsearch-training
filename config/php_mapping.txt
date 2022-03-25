@@ -1,0 +1,110 @@
+protected $mapping
+        = [
+            'properties' => [
+                "id"             => [
+                    "type" => "integer"
+                ],
+                "published_at"     => [
+                    "type"   => "date",
+                    "format" => "yyyy-MM-dd HH:mm:ss"
+                ],
+                "updated_at"     => [
+                    "type"   => "date",
+                    "format" => "yyyy-MM-dd HH:mm:ss"
+                ],
+                "expired_at"     => [
+                    "type"   => "date",
+                    "format" => "yyyy-MM-dd HH:mm:ss"
+                ],
+                "trade_type" => [
+                    "type" => "integer"
+                ],
+                "category_id" => [
+                    "type" => "integer"
+                ],
+                "location_id" => [
+                    "type" => "integer"
+                ],
+                "acreage_id" => [
+                    "type" => "integer"
+                ],
+                "price_id" => [
+                    "type" => "integer"
+                ],
+                "project_id" => [
+                    "type" => "integer"
+                ],
+                "user_id" => [
+                    "type" => "integer"
+                ],
+                "source_id" => [
+                    "type" => "integer"
+                ],
+                "full_text"      => [
+                    "properties" => [
+                        "trade_type"      => [
+                            "type"     => "text",
+                            "analyzer" => "full_text_index_analyzer"
+                        ],
+                        "category_text"   => [
+                            "type"     => "text",
+                            "analyzer" => "full_text_index_analyzer",
+                        ],
+                        "address"         => [
+                            "type"     => "text",
+                            "analyzer" => "full_text_index_analyzer",
+                        ],
+                        "title"           => [
+                            "type"      => "text",
+                            "fielddata" => true,
+                            "analyzer"  => "full_text_index_analyzer"
+                        ],
+                        "tags"            => [
+                            "type"     => "text",
+                            "analyzer" => "full_text_index_analyzer",
+                        ],
+                        "full_text_boots" => [
+                            "type"     => "text",
+                            "analyzer" => "full_text_index_analyzer"
+                        ],
+                        "phone"=> [
+                            "type"     => "text",
+                            "analyzer" => "full_text_index_analyzer"
+                        ],
+                    ]
+                ],
+                "keyword_facets" => [
+                    "type"       => "nested",
+                    "properties" => [
+                        "facet_name"  => [
+                            "type" => "keyword"
+                        ],
+                        "facet_value" => [
+                            "type" => "keyword"
+                        ]
+                    ]
+                ],
+                "integer_facets" => [
+                    "type"       => "nested",
+                    "properties" => [
+                        "facet_name"  => [
+                            "type" => "keyword"
+                        ],
+                        "facet_value" => [
+                            "type" => "integer"
+                        ]
+                    ]
+                ],
+                "float_facets"   => [
+                    "type"       => "nested",
+                    "properties" => [
+                        "facet_name"  => [
+                            "type" => "keyword"
+                        ],
+                        "facet_value" => [
+                            "type" => "float"
+                        ]
+                    ]
+                ]
+            ]
+        ];

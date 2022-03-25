@@ -1,0 +1,178 @@
+DELETE elasticsearch_test
+
+PUT elasticsearch_test
+{
+  "settings": {
+    "index": {
+      "refresh_interval": "2s",
+      "number_of_shards": 3,
+      "number_of_replicas": 2
+    },
+    "analysis": {
+      "tokenizer": {
+        "vi_tokenizer": {
+          "type": "standard",
+          "max_token_length": 15
+        }
+      },
+      "char_filter": {
+        "str_replace": {
+          "type": "mapping",
+          "description": "Thay đổi kí tự, hiểu như str_replace()",
+          "mappings": [
+            "& => and"
+          ]
+        }
+      },
+      "filter": {
+        "stemmer": {
+          "type": "stemmer",
+          "language": "english"
+        },
+        "en_stop": {
+          "type": "stop",
+          "stopwords": [
+            "a",
+            "and",
+            "are"
+          ]
+        },
+        "vi_stop": {
+          "type": "stop",
+          "stopwords": [
+            "bị",
+            "bởi",
+            "cả"
+          ]
+        },
+        "text_slug": {
+          "type": "asciifolding",
+          "preserve_original": true
+        },
+        "length_min_2_char": {
+          "type": "length",
+          "min": 2
+        },
+        "synonym_keyword": {
+          "type": "synonym",
+          "tokenizer": "keyword",
+          "synonyms": [
+            "giáo viên,teacher,cô giáo,nhà giáo,trợ giảng,tutor",
+            "kinh doanh,sale,seller,saleman,salesforce,telesales"
+          ]
+        },
+        "word_delimiter": {
+          "type": "word_delimiter",
+          "split_on_numerics": false,
+          "split_on_case_change": true,
+          "generate_word_parts": true,
+          "generate_number_parts": true,
+          "catenate_all": true,
+          "preserve_original": true,
+          "catenate_numbers": true
+        }
+      },
+      "analyzer": {
+        "full_text_index_analyzer": {
+          "tokenizer": "vi_tokenizer",
+          "char_filter": [
+            "str_replace"
+          ],
+          "filter": [
+            "lowercase",
+            "synonym_keyword",
+            "en_stop",
+            "vi_stop",
+            "stemmer",
+            "length_min_2_char",
+            "text_slug"
+          ]
+        },
+        "full_text_company_analyzer": {
+          "tokenizer": "vi_tokenizer",
+          "filter": [
+            "lowercase",
+            "classic",
+            "text_slug"
+          ]
+        },
+        "full_text_school_analyzer": {
+          "tokenizer": "vi_tokenizer",
+          "filter": [
+            "lowercase",
+            "classic",
+            "text_slug"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "updated_at": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "find_job_status": {
+          "type": "integer"
+        },
+        "display": {
+          "type": "integer"
+        },
+        "full_text": {
+          "properties": {
+            "boosted": {
+              "type": "text",
+              "analyzer": "full_text_index_analyzer"
+            },
+            "job_title": {
+              "type": "text",
+              "analyzer": "full_text_index_analyzer"
+            },
+            "company": {
+              "type": "text",
+              "analyzer": "full_text_company_analyzer"
+            },
+            "school": {
+              "type": "text",
+              "analyzer": "full_text_school_analyzer"
+            },
+            "skill": {
+              "type": "text"
+            }
+          }
+        },
+        "string_facets": {
+          "type": "nested",
+          "properties": {
+            "facet_name": {
+              "type": "keyword"
+            },
+            "facet_value": {
+              "type": "keyword"
+            }
+          }
+        },
+        "number_facets": {
+          "type": "nested",
+          "properties": {
+            "facet_name": {
+              "type": "keyword"
+            },
+            "facet_value": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+GET elasticsearch_test
+GET elasticsearch_test/_mapping
+GET elasticsearch_test/_settings
