@@ -1,5 +1,5 @@
 # Giới thiệu
-Đây là chương trình đào tạo elasticsearch. Kỹ năng dev chức năng tìm kiếm quan trọng trong mọi ứng dụng website hiện nay.
+Đây là project đào tạo elasticsearch. Kỹ năng dev chức năng tìm kiếm quan trọng trong mọi ứng dụng website hiện nay.
 
 # Github helper
 - https://github.com/BrokerExchange/ElasticBuilder: Query DSL Builder for Elasticsearch queries
